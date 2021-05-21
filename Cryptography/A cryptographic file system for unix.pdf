@@ -1,0 +1,1826 @@
+%!PS-Adobe-3.0
+%%Creator: groff version 1.05
+%%DocumentNeededResources: font Times-Bold
+%%+ font Times-Italic
+%%+ font Times-Roman
+%%+ font Courier
+%%+ font Helvetica
+%%DocumentSuppliedResources: procset grops 1.05 0
+%%Pages: 8
+%%PageOrder: Ascend
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset grops 1.05 0
+%!PS-Adobe-3.0 Resource-ProcSet
+
+/setpacking where {
+	pop
+	currentpacking
+	true setpacking
+} if
+
+/grops 120 dict dup begin 
+
+% The ASCII code of the space character.
+/SC 32 def
+
+/A /show load def
+/B { 0 SC 3 -1 roll widthshow } bind def
+/C { 0 exch ashow } bind def
+/D { 0 exch 0 SC 5 2 roll awidthshow } bind def
+/E { 0 rmoveto show } bind def
+/F { 0 rmoveto 0 SC 3 -1 roll widthshow } bind def
+/G { 0 rmoveto 0 exch ashow } bind def
+/H { 0 rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/I { 0 exch rmoveto show } bind def
+/J { 0 exch rmoveto 0 SC 3 -1 roll widthshow } bind def
+/K { 0 exch rmoveto 0 exch ashow } bind def
+/L { 0 exch rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/M { rmoveto show } bind def
+/N { rmoveto 0 SC 3 -1 roll widthshow } bind def
+/O { rmoveto 0 exch ashow } bind def
+/P { rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/Q { moveto show } bind def 
+/R { moveto 0 SC 3 -1 roll widthshow } bind def
+/S { moveto 0 exch ashow } bind def
+/T { moveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+
+% name size font SF -
+
+/SF {
+	findfont exch
+	[ exch dup 0 exch 0 exch neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+% name a c d font MF -
+
+/MF {
+	findfont
+	[ 5 2 roll
+	0 3 1 roll % b
+	neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+/level0 0 def
+/RES 0 def
+/PL 0 def
+/LS 0 def
+
+% BP -
+
+/BP {
+	/level0 save def
+	1 setlinecap
+	1 setlinejoin
+	72 RES div dup scale
+	LS {
+		90 rotate
+	} {
+		0 PL translate
+	} ifelse
+	1 -1 scale
+} bind def
+
+/EP {
+	level0 restore
+	showpage
+} bind def
+
+
+% centerx centery radius startangle endangle DA -
+
+/DA {
+	newpath arcn stroke
+} bind def
+
+% x y SN - x' y'
+% round a position to nearest (pixel + (.25,.25))
+
+/SN {
+	transform 
+	.25 sub exch .25 sub exch
+	round .25 add exch round .25 add exch
+	itransform
+} bind def
+	
+% endx endy startx starty DL -
+% we round the endpoints of the line, so that parallel horizontal
+% and vertical lines will appear even
+
+/DL {
+	SN
+	moveto
+	SN
+	lineto stroke
+} bind def
+
+% centerx centery radius DC -
+
+/DC {
+	newpath 0 360 arc closepath
+} bind def
+
+
+/TM matrix def
+
+%  width height centerx centery DE -
+
+/DE {
+	TM currentmatrix pop
+	translate scale newpath 0 0 .5 0 360 arc closepath
+	TM setmatrix
+} bind def
+
+% these are for splines
+
+/RC /rcurveto load def
+/RL /rlineto load def
+/ST /stroke load def
+/MT /moveto load def
+/CL /closepath load def
+
+% fill the last path
+
+% amount FL -
+
+/FL {
+	currentgray exch setgray fill setgray
+} bind def
+
+% fill with the ``current color''
+
+/BL /fill load def
+
+/LW /setlinewidth load def
+% new_font_name encoding_vector old_font_name RE -
+
+/RE {
+	findfont
+	dup maxlength dict begin
+	{
+		1 index /FID ne { def } { pop pop } ifelse
+	} forall
+	/Encoding exch def
+	dup /FontName exch def
+	currentdict end definefont pop
+} bind def
+
+/DEFS 0 def
+
+% hpos vpos EBEGIN -
+
+/EBEGIN {
+	moveto
+	DEFS begin
+} bind def
+
+/EEND /end load def
+
+/CNT 0 def
+/level1 0 def
+
+% llx lly newwid wid newht ht newllx newlly PBEGIN -
+
+/PBEGIN {
+	/level1 save def
+	translate
+	div 3 1 roll div exch scale
+	neg exch neg exch translate
+	% set the graphics state to default values
+	0 setgray
+	0 setlinecap
+	1 setlinewidth
+	0 setlinejoin
+	10 setmiterlimit
+	[] 0 setdash
+	/setstrokeadjust where {
+		pop
+		false setstrokeadjust
+	} if
+	/setoverprint where {
+		pop
+		false setoverprint
+	} if
+	newpath
+	/CNT countdictstack def
+	userdict begin
+	/showpage {} def
+} bind def
+
+/PEND {
+	clear
+	countdictstack CNT sub { end } repeat
+	level1 restore
+} bind def
+
+end def
+
+/setpacking where {
+	pop
+	setpacking
+} if
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Courier
+%%IncludeResource: font Helvetica
+grops begin/DEFS 1 dict def DEFS begin/u{.001 mul}bind def end/RES 72 def/PL
+792 def/LS false def/ENC0[/asciicircum/asciitilde/Scaron/Zcaron/scaron/zcaron
+/Ydieresis/trademark/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam
+/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright
+/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven
+/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J
+/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/circumflex
+/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z
+/braceleft/bar/braceright/tilde/.notdef/quotesinglbase/guillemotleft
+/guillemotright/bullet/florin/fraction/perthousand/dagger/daggerdbl/endash
+/emdash/ff/fi/fl/ffi/ffl/dotlessi/dotlessj/grave/hungarumlaut/dotaccent/breve
+/caron/ring/ogonek/quotedblleft/quotedblright/oe/lslash/quotedblbase/OE/Lslash
+/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis
+/copyright/ordfeminine/guilsinglleft/logicalnot/minus/registered/macron/degree
+/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guilsinglright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth
+/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave
+/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex
+/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde
+/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn
+/ydieresis]def/Helvetica@0 ENC0/Helvetica RE/Courier@0 ENC0/Courier RE
+/Times-Roman@0 ENC0/Times-Roman RE/Times-Italic@0 ENC0/Times-Italic RE
+/Times-Bold@0 ENC0/Times-Bold RE
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 12/Times-Bold@0 SF 3(AC)211.776 98 S(ryptographic File System for Unix)
+232.104 98 Q/F1 10/Times-Italic@0 SF(Matt Blaze)287.795 120 Q/F2 10
+/Times-Roman@0 SF -1.11(AT)260.44 137 S(&T Bell Laboratories)1.11 E
+(101 Crawfords Corner Road, Room 4G-634)221.555 149 Q(Holmdel, NJ 07733)270.295
+161 Q/F3 10/Courier@0 SF(mab@research.att.com)249.6 185 Q/F4 9/Times-Bold@0 SF
+(Abstract)163.255 229 Q/F5 9/Times-Italic@0 SF .381
+(Although cryptographic techniques ar)83.7 242 R 2.631(ep)-.333 G .381
+(laying an incr)232.878 242 R(eas-)-.333 E .859(ingly important r)61.2 252 R
+.86(ole in modern computing system security)-.333 F 3.11(,u)-.495 G(ser)284.985
+252 Q(-)-.18 E 1.745(level tools for encrypting \214le data ar)61.2 262 R 3.995
+(ec)-.333 G 1.745(umbersome and suffer)215.318 262 R(fr)61.2 272 Q 1.931
+(om a number of inher)-.333 F 1.931(ent vulnerabilities.)-.333 F 1.932
+(The Cryptographic)6.431 F .432
+(File System \(CFS\) pushes encryption services into the \214le system)61.2 282
+R 2.677(itself. CFS)61.2 292 R .427(supports secur)2.677 F 2.677(es)-.333 G
+.428(torage at the system level thr)167.578 292 R .428(ough a)-.333 F(standar)
+61.2 302 Q 4.871(dU)-.333 G 2.62
+(nix \214le system interface to encrypted \214les.)104.24 302 R(Users)7.12 E
+1.411(associate a cryptographic key with the dir)61.2 312 R 1.411
+(ectories they wish to)-.333 F(pr)61.2 322 Q 4.364(otect. Files)-.333 F 2.114
+(in these dir)4.364 F 2.114(ectories \(as well as their pathname)-.333 F .721
+(components\) ar)61.2 332 R 2.971(et)-.333 G(ranspar)127.298 332 Q .721
+(ently encrypted and decrypted with the)-.333 F .579
+(speci\214ed key without further user intervention; cleartext is never)61.2 342
+R(stor)61.2 352 Q .449(ed on a disk or sent to a r)-.333 F .449
+(emote \214le server)-.333 F 4.95(.C)-.999 G .45(FS can use any)242.712 352 R
+.638(available \214le system for its underlying storage without modi\214ca-)
+61.2 362 R .44(tion, including r)61.2 372 R .44
+(emote \214le servers such as NFS.)-.333 F .44(System manage-)4.94 F 1.562
+(ment functions, such as \214le backup, work in a normal manner)61.2 382 R
+(and without knowledge of the key)61.2 392 Q(.)-.495 E 2.551
+(This paper describes the design and implementation of)83.7 405 R 2.698
+(CFS under Unix.)61.2 415 R 2.697
+(Encryption techniques for \214le system-level)7.198 F 1.994(encryption ar)61.2
+425 R 4.244(ed)-.333 G 1.994(escribed, and general issues of cryptographic)
+124.345 425 R 1.702(system interfaces to support r)61.2 435 R 1.702
+(outine secur)-.333 F 3.952(ec)-.333 G 1.702(omputing ar)231.73 435 R 3.952(ed)
+-.333 G(is-)289.8 435 Q(cussed.)61.2 445 Q F4 2.25(1. Intr)61.2 465 R(oduction)
+-.162 E/F6 9/Times-Roman@0 SF .201
+(Data security in modern distributed computing systems is a)83.7 478 R(dif)61.2
+488 Q 1.434(\214cult problem.)-.162 F 1.433
+(Network connections and remote \214le system)5.934 F .488
+(services, while convenient, often make it possible for an intruder)61.2 498 R
+1.362(to gain access to sensitive data by compromising only a single)61.2 508 R
+1.246(component of a lar)61.2 518 R 1.246(ge system.)-.162 F 1.247
+(Because of the dif)5.746 F 1.247(\214culty of reli-)-.162 F .236
+(ably protecting information, sensitive \214les are often not stored on)61.2
+528 R .174(networked computers, making access to them by authorized users)61.2
+538 R .813(inconvenient and putting them out of the reach of useful system)61.2
+548 R .808(services such as backup.)61.2 558 R .808(\(Of course, of)5.308 F
+3.058(fl)-.162 G .809(ine backups are them-)217.147 558 R 1.208
+(selves a security risk, since they make it dif)61.2 568 R 1.207
+(\214cult to destroy all)-.162 F .866
+(copies of con\214dential data when they are no longer needed.\))61.2 578 R(In)
+5.366 E(ef)61.2 588 Q 1.309
+(fect, the \(often well founded\) fear that computer data are not)-.162 F .431
+(terribly private has led to a situation where conventional wisdom)61.2 598 R
+1.661(warns us not to entrust our most important information to our)61.2 608 R
+(most modern computers.)61.2 618 Q 1.635(Cryptographic techniques of)83.7 631 R
+1.635(fer a promising approach for)-.162 F 3.441
+(protecting \214les against unauthorized access.)61.2 641 R 3.441
+(When properly)7.941 F 7.927
+(implemented and appropriately applied, modern cipher)61.2 651 R .28 LW 133.2
+659 61.2 659 DL/F7 7/Times-Roman@0 SF .944
+(This is a pre-print of a paper to be presented at the First ACM)73.7 669.5 R
+2.032(Conference on Communications and Computing Security)61.2 678.5 R 3.782
+(,F)-.455 G(airfax,)241.126 678.5 Q -.903(VA)61.2 687.5 S 1.75(,N).903 G
+(ovember 3-5, 1993.)-1.75 E F6 .955
+(algorithms \(such as the Data Encryption Standard \(DES\)[5] and)320.4 229 R
+.541(the more recent IDEA cipher[4]\) are widely believed suf)320.4 239 R
+(\214ciently)-.162 E 3.08
+(strong to render encrypted data unavailable to virtually any)320.4 249 R .982
+(adversary who cannot supply the correct key)320.4 259 R 5.482(.H)-.585 G
+(owever)500.893 259 Q 3.233(,r)-.36 G(outine)535.5 259 Q .914
+(use of these algorithms to protect \214le data is uncommon in cur)320.4 269 R
+(-)-.18 E .886(rent systems.)320.4 279 R .887
+(This is partly because \214le encryption tools, to the)5.386 F .732
+(extent they are available at all, are often poorly integrated, dif)320.4 289 R
+<8c2d>-.162 E 2.047
+(cult to use, and vulnerable to non-cryptanalytic system level)320.4 299 R
+3.186(attacks. W)320.4 309 R 3.186(eb)-.72 G .936
+(elieve that \214le encryption is better handled by the)372.537 309 R 2.388
+(\214le system itself.)320.4 319 R 2.389
+(This paper investigates the implications of)6.888 F 2.322
+(cryptographic protection as a basic feature of the \214le system)320.4 329 R
+(interface.)320.4 339 Q F4 2.25(1.1. User)320.4 359 R
+(-Level Cryptography Is Cumbersome)-.333 E F6 .347
+(The simplest approach for \214le encryption is through a tool,)342.9 372 R
+.241(such as the Unix)320.4 382 R/F8 9/Courier@0 SF(crypt)2.49 E F6 .24
+(program, that enciphers \(or deciphers\) a)2.49 F .773
+(\214le or data stream with a speci\214ed key)320.4 392 R 5.273(.E)-.585 G .773
+(ncryption and decryp-)476.974 392 R .382(tion are under the user)320.4 402 R
+1.372 -.495('s d).333 H .382(irect control.).495 F .381
+(Depending on the partic-)4.881 F .905
+(ular software, the program may or may not automatically delete)320.4 412 R
+1.925(the cleartext when encrypting, and such programs can usually)320.4 422 R
+(also be used as cryptographic "\214lters" in a command pipeline.)320.4 432 Q
+1.939(Another approach is integrated encryption in application)342.9 445 R .239
+(software, where each program that is to manipulate sensitive data)320.4 455 R
+1.485(has built-in cryptographic facilities.)320.4 465 R 1.485
+(For example, a text editor)5.985 F 2.217
+(could ask for a key when a \214le is opened and automatically)320.4 475 R
+1.105(encrypt and decrypt the \214le')320.4 485 R 3.355(sd)-.495 G 1.106
+(ata as they are written and read.)437.156 485 R 1.739
+(All applications that are to operate on the same data must, of)320.4 495 R
+.313(course, include the same encryption engine.)320.4 505 R .313
+(An encryption \214lter)4.813 F(,)-.36 E 2.375(such as)320.4 515 R F8(crypt)
+4.625 E F6 4.625(,m)C 2.374(ight also be provided to allow data to be)394.521
+515 R(imported into and exported out of other software.)320.4 525 Q
+(Unfortunately)342.9 538 Q 3.829(,n)-.585 G 1.58
+(either approach is entirely satisfactory in)403.384 538 R 4.44
+(terms of security)320.4 548 R 6.69(,g)-.585 G(enerality)402.624 548 Q 6.69(,o)
+-.585 G 6.689(rc)446.97 548 S 6.689(onvenience. The)460.652 548 R(former)6.689
+E 3.48(approach, while allowing great \215exibility in its application,)320.4
+558 R 1.764(invites mistakes; the user could inadvertently fail to encrypt a)
+320.4 568 R .722(\214le, leaving it in the clear)320.4 578 R 2.972(,o)-.36 G
+2.972(rc)425.361 578 S .722(ould for)435.326 578 R .723
+(get to delete the cleartext)-.162 F 1.707(version after encryption.)320.4 588
+R 1.706(The manual nature of the encryption)6.207 F 1.095
+(and the need to supply the key several times whenever a \214le is)320.4 598 R
+.263(used make encryption too cumbersome for all but the most sensi-)320.4 608
+R 1.284(tive of \214les.)320.4 618 R 1.284(More seriously)5.784 F 3.534(,e)
+-.585 G 1.284(ven when used properly)436.224 618 R 3.534(,m)-.585 G(anual)
+538.506 618 Q 1.517
+(encryption programs open a window of vulnerability while the)320.4 628 R .214
+(\214le is in clear form.)320.4 638 R .215
+(It is almost impossible to avoid occasionally)4.714 F 2.648
+(storing cleartext on the disk and, in the case of remote \214le)320.4 648 R
+1.171(servers, sending it over the network.)320.4 658 R 1.171
+(Some applications simply)5.671 F
+(expect to be able to read and write ordinary \214les.)320.4 668 Q .094
+(In the application-based approach, each program must have)342.9 681 R 4.089
+(built-in encryption functionality)320.4 691 R 8.59(.A)-.585 G 4.09
+(lthough encryption takes)460.828 691 R .065(place automatically)320.4 701 R
+2.315(,t)-.585 G .065(he user still must supply a key to each appli-)397.183
+701 R .385
+(cation, typically when it is invoked or when a \214le is \214rst opened.)320.4
+711 R .771(Software without encryption capability cannot operate on secure)
+320.4 721 R EP
+%%Page: 2 2
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 9/Times-Roman@0 SF .539
+(data without the use of a separate encryption program, making it)61.2 64 R
+.188(hard to avoid all the problems outlined in the previous paragraph.)61.2 74
+R 2.455(Furthermore, rather than being con\214ned to a single program,)61.2 84
+R .673(encryption is spread among multiple applications, each of which)61.2 94
+R 1.655(must be trusted to interoperate securely and correctly with the)61.2
+104 R 2.626(others. A)61.2 114 R .376
+(single poorly designed component can introduce a sig-)2.626 F 2.607
+(ni\214cant and dif)61.2 124 R 2.608
+(\214cult to detect window of vulnerability)-.162 F 7.108(.\()-.585 G(For)
+286.299 124 Q 1.059(example, some versions of the Unix editor)61.2 134 R/F1 9
+/Courier@0 SF(vi)3.308 E F0 1.058(can encrypt \214les)3.308 F .314
+(but still leave temporary data in the clear)61.2 144 R 2.564(.\) Changing)
+-.495 F .315(the encryp-)2.564 F .568
+(tion algorithm entails modi\214cation of every program that uses it,)61.2 154
+R 1.326(creating many opportunities for implementation errors.)61.2 164 R
+(Finally)5.826 E(,)-.585 E .792(multiple copies of user)61.2 174 R .792
+(-level cryptographic code can introduce a)-.18 F
+(signi\214cant performance penalty)61.2 184 Q(.)-.585 E/F2 9/Times-Bold@0 SF
+2.25(1.2. System-Level)61.2 204 R(Cryptography Is Often Insuf\214cient)2.25 E
+F0 .183(One way to avoid many of the pitfalls of user)83.7 217 R .183
+(-level encryp-)-.18 F .173
+(tion is to make cryptographic services a basic part of the underly-)61.2 227 R
+.054(ing system.)61.2 237 R .054
+(In designing such a system, it is important to identify)4.554 F 1.914
+(exactly what is to be trusted with cleartext and what requires)61.2 247 R
+1.877(cryptographic protection.)61.2 257 R 1.877
+(In other words, we must understand)6.377 F
+(what components of the system are vulnerable to compromise.)61.2 267 Q .421
+(In general, the user has little choice but to trust)83.7 280 R/F3 9
+/Times-Italic@0 SF(some)2.671 E F0(com-)2.671 E .531
+(ponents of the system, since the whole point of storing data on a)61.2 290 R
+.822(computer is to perform various operations on the cleartext.)61.2 300 R
+(Ide-)5.322 E(ally)61.2 310 Q 2.779(,h)-.585 G(owever)83.644 310 Q 2.779(,r)
+-.36 G .529(equired trust should be limited to those parts of a)117.797 310 R
+(system that are under the user)61.2 320 Q .99 -.495('s d).333 H
+(irect control.).495 E .625
+(For \214les, we are usually interested in protecting the physi-)83.7 333 R
+.964(cal media on which sensitive data are stored.)61.2 343 R .964
+(This includes on-)5.464 F .444
+(line disks as well as backup copies \(which may persist long after)61.2 353 R
+.12(the on-line versions have been deleted\).)61.2 363 R .12
+(In distributed \214le server)4.62 F(-)-.18 E 1.488
+(based systems, it is often also desirable to protect the network)61.2 373 R
+1.6(connection between client and server since these links may be)61.2 383 R
+.896(very easy for an eavesdropper to monitor)61.2 393 R 5.395(.F)-.495 G
+(inally)226.689 393 Q 3.145(,i)-.585 G 3.145(ti)254.503 393 S 3.145(sp)262.652
+393 S(ossible)273.798 393 Q .24
+(that the user may not trust the \214le server itself, especially when it)61.2
+403 R(is physically or administratively remote.)61.2 413 Q 1.094
+(Physical media can be protected by specialized hardware.)83.7 426 R 3.774
+(Disk controllers are commercially available with embedded)61.2 436 R .766
+(encryption hardware that can be used to encipher entire disks or)61.2 446 R
+.769(individual \214le blocks with a speci\214ed key)61.2 456 R 5.269(.O)-.585
+G .769(nce the key is pro-)229.24 456 R .737
+(vided to the controller hardware, encryption is completely trans-)61.2 466 R
+2.574(parent. This)61.2 476 R .324
+(approach has a number of disadvantages for general)2.574 F .849(use, however)
+61.2 486 R 5.349(.T)-.495 G .849
+(he granularity of encryption keys must be com-)122.136 486 R .688
+(patible with the hardware; often, the entire disk must be thought)61.2 496 R
+1.331(of as a single protected entity)61.2 506 R 5.83(.I)-.585 G 3.58(ti)
+184.078 506 S 3.58(sd)192.662 506 S(if)204.243 506 Q 1.33
+(\214cult to share resources)-.162 F 1.488
+(among users who are not willing to trust one another with the)61.2 516 R .811
+(same key)61.2 526 R 5.311(.O)-.585 G(bviously)109.226 526 Q 3.061(,t)-.585 G
+.811(his approach is only applicable when the)147.459 526 R .665
+(required hardware is available.)61.2 536 R .665(Backups remain a dif)5.165 F
+.665(\214cult prob-)-.162 F 3.84(lem. If)61.2 546 R 1.59
+(the backups are taken of the raw)3.84 F 3.839(,u)-.585 G 1.589
+(ndecrypted disk, it)228.878 546 R .378(may be dif)61.2 556 R .378
+(\214cult to restore \214les reliably should the disk controller)-.162 F .242
+(hardware become unavailable, even when the keys are known.)61.2 566 R(If)4.742
+E 1.536(the backup is taken of the cleartext data the backup itself will)61.2
+576 R .831(require separate cryptographic protection.)61.2 586 R(Finally)5.331
+E 3.081(,t)-.585 G .831(his approach)252.231 586 R 1.579
+(does not protect data going into and out of the disk controller)61.2 596 R
+1.156(itself, and therefore may not be suf)61.2 606 R 1.155
+(\214cient for protecting data in)-.162 F(remote \214le servers.)61.2 616 Q
+3.106(Network connections between client machines and \214le)83.7 629 R .896
+(servers can be protected with end-to-end encryption and crypto-)61.2 639 R
+3.318(graphic authentication.)61.2 649 R 3.318
+(Again, specialized hardware may be)7.818 F 1.049
+(employed for this purpose, depending on the particular network)61.2 659 R
+1.887(involved, or it may be implemented in software.)61.2 669 R 1.888
+(Not all net-)6.388 F .221(works support encryption, however)61.2 679 R 2.471
+(,a)-.36 G .221(nd among those that do, not)197.696 679 R 1.481
+(all system vendors supply working implementations of encryp-)61.2 689 R
+(tion as a standard product.)61.2 699 Q .954
+(Even when the various problems with media and network)83.7 712 R 4.36
+(level encryption are ignored, the combination of the two)61.2 722 R 1.966
+(approaches may not be adequate for the protection of data in)320.4 64 R .856
+(modern distributed systems.)320.4 74 R .856(In particular)5.356 F 3.106(,e)
+-.36 G .857(ven though cleartext)482.801 74 R .879
+(may never be stored on a disk or sent "over the wire", sensitive)320.4 84 R
+1.082(data can be leaked if the \214le server itself is compromised.)320.4 94 R
+(The)5.582 E 1.17
+(\214le server must maintain, at some point, the keys used to enci-)320.4 104 R
+1.387(pher both the disk and the network.)320.4 114 R 1.388
+(Even if the server can be)5.888 F 1.798
+(completely trusted, direct media encryption on top of network)320.4 124 R .513
+(encryption has a number of shortcomings from the point of view)320.4 134 R
+2.474(of ef)320.4 144 R 2.474(\214cient distributed system design.)-.162 F
+2.474(Observe that each \214le)6.974 F .722
+(access requires two cryptographic operations by the server)320.4 154 R 2.973
+(,o)-.36 G(nce)545.508 154 Q 1.65
+(for the network and once for the disk, even though the server)320.4 164 R
+1.064(itself never makes use of cleartext data.)320.4 174 R 1.065
+(Such a design violates)5.565 F .59
+(the principle that work should be shifted from the \(shared, heav-)320.4 184 R
+2.348(ily loaded\) \214le server to the \(unshared, lightly loaded\) client)
+320.4 194 R .56(machine whenever possible[1].)320.4 204 R .559
+(Even if the cryptographic opera-)5.059 F .806
+(tions are themselves implemented in hardware, additional server)320.4 214 R
+(software complexity is still required to support them.)320.4 224 Q .111
+(Several commercial and research systems incorporate cryp-)342.9 237 R .267
+(tographic techniques for protecting \214le data against various kinds)320.4
+247 R .956(of attack.)320.4 257 R .955
+(In the personal computer \(e.g., MS-DOS, Macintosh\))5.455 F 3.406
+(world, there are \214le encryption systems that can create an)320.4 267 R .287
+("encrypted area" on a disk.)320.4 277 R .287
+(These packages generally require the)4.787 F 1.048
+(preallocation of storage space to a given key)320.4 287 R 3.299(,a)-.585 G
+1.049(nd often support)496.907 287 R 2.036
+(only a particular kind of storage media \(such as a local hard)320.4 297 R
+3.792(disk\). Encrypted)320.4 307 R 1.542
+(\214les typically appear outside the system as a)3.792 F .383(single lar)320.4
+317 R .382(ge \214le and therefore cannot be readily managed by con-)-.162 F
+3.267(ventional administration tools or moved to arbitrary storage)320.4 327 R
+4.46(devices. In)320.4 337 R(lar)4.46 E(ger)-.162 E 2.209
+(-scale systems, cryptographic techniques are)-.18 F .438
+(even less widely used, although a few systems do use encryption)320.4 347 R
+2.342(for protecting certain vulnerable interfaces.)320.4 357 R 2.341(The T)
+6.841 F(ruf)-.315 E 2.341(\215es sys-)-.162 F .144
+(tem[7], for example, uses a combination of cryptographic authen-)320.4 367 R
+1.582(tication and secret-key encryption to protect network access to)320.4 377
+R 1.676(widely distributed shared \214les.)320.4 387 R 1.677
+(The \214les themselves, however)6.177 F(,)-.36 E
+(are stored at the server in clear form.)320.4 397 Q 3.591
+(In the following sections, we describe the alternative)342.9 410 R 1.513
+(approach taken by the Cryptographic File System \(CFS\).)320.4 420 R(CFS)6.014
+E .014
+(pushes \214le encryption entirely into the client \214le system interface,)
+320.4 430 R .515(and therefore does not suf)320.4 440 R .516
+(fer from many of the dif)-.162 F .516(\214culties inher)-.162 F(-)-.18 E .009
+(ent in user)320.4 450 R .009
+(-level and disk and network based system-level encryp-)-.18 F(tion.)320.4 460
+Q F2 2.25(2. CFS:)320.4 480 R(Cryptographic Services in the File System)2.25 E
+F0 .263(CFS investigates the question of where in a system respon-)342.9 493 R
+.707(sibility for \214le encryption properly belongs.)320.4 503 R .707
+(As discussed in the)5.207 F .081
+(previous section, if encryption is performed at too low a level, we)320.4 513
+R .264(introduce vulnerability by requiring trust in components that may)320.4
+523 R 1.574(be far removed from the user)320.4 533 R 2.564 -.495('s c).333 H
+3.824(ontrol. On).495 F 1.575(the other hand, if)3.824 F 1.863
+(encryption is too close to the user)320.4 543 R 4.113(,t)-.36 G 1.863
+(he high degree of human)461.07 543 R 1.211
+(interaction required invites errors as well as the perception that)320.4 553 R
+1.799(cryptographic protection is not worth the trouble for practical,)320.4
+563 R .461(day-to-day use.)320.4 573 R .462
+(CFS is designed on the principle that the trusted)4.961 F .142
+(components of a system should encrypt immediately before send-)320.4 583 R
+(ing data to untrusted components.)320.4 593 Q F2 2.25(2.1. Design)320.4 613 R
+(Goals)2.25 E F0 .452(CFS occupies something of a middle ground between low-)
+342.9 626 R .018(level and user)320.4 636 R .018(-level cryptography)-.18 F
+4.518(.I)-.585 G 2.268(ta)450.171 636 S .018(ims to protect exactly those)
+458.937 636 R .069
+(aspects of \214le storage that are vulnerable to attack in a way that is)320.4
+646 R .677(convenient enough to use routinely)320.4 656 R 5.177(.I)-.585 G
+2.927(np)459.433 656 S(articular)471.36 656 Q 2.927(,w)-.36 G 2.927(ea)512.663
+656 S .677(re guided)523.582 656 R(by the following speci\214c goals:)320.4 666
+Q 19.35<8352>320.4 679 S .874(ational key management.)348.903 679 R .875
+(Cryptographic systems restrict)5.375 F 1.34
+(access to sensitive information through knowledge of the)342.9 689 R .664
+(keys used to encrypt the data.)342.9 699 R(Clearly)5.164 E 2.915(,t)-.585 G
+2.915(ob)491.441 699 S 2.915(eo)503.356 699 S 2.915(fa)514.767 699 S .665
+(ny use at)524.675 699 R 1.837
+(all, a system must have some way of obtaining the key)342.9 709 R 1.318
+(from the user)342.9 719 R 5.818(.B)-.495 G 1.318
+(ut this need not be intrusive; encryption)407.1 719 R 1.513
+(keys should not have to be supplied more than once per)342.9 729 R EP
+%%Page: 3 3
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 9/Times-Roman@0 SF 3.738(session. Once)83.7 64 R 3.738(ak)3.738 G 1.489
+(ey has been entered and authenticated,)152.901 64 R 1.124
+(the user should not be asked to supply it again on subse-)83.7 74 R 2.454
+(quent operations that can be reliably associated with it)83.7 84 R 2.628
+(\(e.g., originating from the same keyboard\).)83.7 94 R 2.628(Of course,)7.128
+F 2.375(there should also be some way to manually destroy or)83.7 104 R 1.215
+(remove from the system a supplied key when it is not in)83.7 114 R
+(active use.)83.7 124 Q 19.35<8354>61.2 137 S 4.44
+(ransparent access semantics.)88.884 137 R 4.441(Encrypted \214les should)8.941
+F 1.089(behave no dif)83.7 147 R 1.089
+(ferently from other \214les, except in that they)-.162 F .275
+(are useless without the key)83.7 157 R 4.776(.E)-.585 G .276
+(ncrypted \214les should support)193.725 157 R .79
+(the same access methods available on the underlying stor)83.7 167 R(-)-.18 E
+.577(age system.)83.7 177 R .577(All system calls should work normally)5.077 F
+2.827(,a)-.585 G .577(nd it)281.969 177 R .597
+(should be possible to compile and execute in a completely)83.7 187 R
+(encrypted environment.)83.7 197 Q 19.35<8354>61.2 210 S 2.742
+(ransparent performance.)88.884 210 R 2.743(Although cryptographic algo-)7.243
+F 1.395(rithms are often somewhat computationally intensive, the)83.7 220 R
+.357(performance penalty associated with encrypted \214les should)83.7 230 R
+1.074(not be so high that it discourages their use.)83.7 240 R 1.073
+(In particular)5.573 F(,)-.36 E 5.77
+(interactive response time should not be noticeably)83.7 250 R(degraded.)83.7
+260 Q 19.35<8350>61.2 273 S .466(rotection of \214le contents.)88.704 273 R
+(Clearly)4.966 E 2.716(,t)-.585 G .466(he data in \214les should)218.438 273 R
+1.904(be protected, as should structural data related to a \214le')83.7 283 R
+(s)-.495 E 3.227(contents. For)83.7 293 R .977
+(example, it should not be possible to deter)3.227 F(-)-.18 E 2.332
+(mine that a particular sequence of bytes occurs several)83.7 303 R
+(times within a \214le, or how two encrypted \214les dif)83.7 313 Q(fer)-.162 E
+(.)-.495 E 19.35<8350>61.2 326 S 1.777(rotection of sensitive meta-data.)88.704
+326 R 1.776(Considerable informa-)6.276 F 1.82
+(tion can often be derived from a \214le system')83.7 336 R 4.07(ss)-.495 G
+(tructural)268.308 336 Q 1.264
+(data; these should be protected to the extent possible.)83.7 346 R(In)5.764 E
+(particular)83.7 356 Q 2.778<2c8c>-.36 G .529
+(le names should not be discernible without the)127.86 356 R(key)83.7 366 Q(.)
+-.585 E 19.35<8350>61.2 379 S 2.27(rotection of network connections.)88.704 379
+R 2.269(Distributed \214le sys-)6.769 F 1.663
+(tems make the network an attractive tar)83.7 389 R 1.663(get for obtaining)
+-.162 F 1.096(sensitive \214le data; no information that is encrypted in the)
+83.7 399 R 1.514(\214le system itself should be discernible by observation of)
+83.7 409 R(network traf)83.7 419 Q(\214c.)-.162 E 19.35<834e>61.2 432 S .341
+(atural key granularity)90.198 432 R 4.841(.T)-.585 G .341
+(he grouping of what is protected)180.366 432 R 2.143
+(under a particular key should mirror the structural con-)83.7 442 R 1.097
+(structs presented to the user by the underlying system.)83.7 452 R(It)5.597 E
+.797(should be easy to protect related \214les under the same key)83.7 462 R(,)
+-.585 E 1.604(and it should be easy to create new keys for other \214les.)83.7
+472 R 1.404(The Unix directory structure is a \215exible, natural way to)83.7
+482 R(group \214les.)83.7 492 Q 19.35<8343>61.2 505 S .672
+(ompatibility with underlying system services.)89.703 505 R(Encrypted)5.171 E
+1.209(\214les and directories should be stored and managed in the)83.7 515 R
+1.857(same manner as other \214les.)83.7 525 R 1.856(In particular)6.356 F
+4.106(,a)-.36 G(dministrators)251.298 525 Q .892
+(should be able to backup and restore individual encrypted)83.7 535 R .817
+(\214les without the use of special tools and without knowing)83.7 545 R 1.357
+(the key)83.7 555 R 5.857(.I)-.585 G 3.607(ng)121.82 555 S 1.357
+(eneral, untrusted parts of the system should)134.427 555 R
+(not require modi\214cation.)83.7 565 Q 19.35<8350>61.2 578 S(ortability)88.704
+578 Q 5.28(.T)-.585 G .78(he encryption system should exploit existing)134.151
+578 R 4.27(interfaces wherever possible and should not rely on)83.7 588 R 1.329
+(unusual or special-purpose system features.)83.7 598 R(Furthermore,)5.828 E
+2.272(encrypted \214les should be portable between implementa-)83.7 608 R
+(tions; \214les should be usable wherever the key is supplied.)83.7 618 Q 19.35
+<8353>61.2 631 S 2.955(cale. The)88.704 631 R .704
+(encryption engine should not place an unusual)2.955 F .709
+(load on any shared component of the system.)83.7 641 R .709(File servers)5.209
+F .599(in particular should not be required to perform any special)83.7 651 R
+.357(additional processing for clients who require cryptographic)83.7 661 R
+(protection.)83.7 671 Q 19.35<8343>61.2 684 S .894(oncurrent access.)89.703 684
+R .893(It should be possible for several users)5.394 F 1.434
+(\(or processes\) to have access to the same encrypted \214les)83.7 694 R
+(simultaneously)83.7 704 Q 7.031(.S)-.585 G 2.53
+(haring semantics should be similar to)151.904 704 R
+(those of the underlying storage system.)83.7 714 Q 19.35<834c>320.4 64 S 1.57
+(imited trust.)348.399 64 R 1.57(In general, the user should be required to)
+6.07 F .486(trust only those components under his or her direct control)342.9
+74 R 3.34(and whose integrity can be independently veri\214ed.)342.9 84 R(It)
+7.841 E 2.208(should not, for example, be necessarily to trust the \214le)342.9
+94 R 1.081(servers from which storage services are obtained.)342.9 104 R 1.082
+(This is)5.581 F 3.211(especially important in lar)342.9 114 R 3.211
+(ge-scale environments where)-.162 F
+(administrative control is spread among several entities.)342.9 124 Q 19.35
+<8343>320.4 137 S 2.322(ompatibility with future technology)348.903 137 R 6.822
+(.S)-.585 G 2.322(everal emer)497.61 137 R(ging)-.162 E 3.575
+(technologies have potential applicability for protecting)342.9 147 R 2.751
+(data. In)342.9 157 R(particular)2.751 E 2.751(,k)-.36 G .501
+(eys could be contained in or managed)419.022 157 R .448
+(by "smart cards" that would remain in the physical posses-)342.9 167 R 2.481
+(sion of authorized users.)342.9 177 R 2.482(An encryption system should)6.981
+F(support, but not require, novel hardware of this sort.)342.9 187 Q/F1 9
+/Times-Bold@0 SF 2.25(2.2. CFS)320.4 207 R(Functionality and User Interface)
+2.25 E F0 1.851(An important goal of CFS is to present the user with a)342.9
+220 R .725(secure \214le service that works in a seamless manner)320.4 230 R
+2.976(,w)-.36 G .726(ithout any)521.022 230 R 1.504
+(notion that encrypted \214les are somehow "special", and without)320.4 240 R
+.202(the need to type in the same key several times in a single session.)320.4
+250 R .955(Most interaction with CFS is through standard \214le system calls,)
+320.4 260 R 1.929
+(with no prominent distinction between \214les that happen to be)320.4 270 R
+(under CFS and those that are not.)320.4 280 Q 1.64
+(CFS provides a transparent Unix \214le system interface to)342.9 293 R 1.416
+(directory hierarchies that are automatically encrypted with user)320.4 303 R
+.279(supplied keys.)320.4 313 R .279
+(Users issue a simple command to "attach" a cryp-)4.779 F .611
+(tographic key to a directory)320.4 323 R 5.111(.A)-.585 G .611
+(ttached directories are then avail-)435.595 323 R .663
+(able to the user with all the usual system calls and tools, but the)320.4 333
+R 4.581(\214les are automatically encrypted as they are written and)320.4 343 R
+.714(decrypted as they are read.)320.4 353 R .713
+(No modi\214cations of the \214le systems)5.214 F .515
+(on which the encrypted \214les are stored are required.)320.4 363 R .515
+(File system)5.015 F .428
+(services such as backup, restore, usaage accounting, and archival)320.4 373 R
+.302(work normally on encrypted \214les and directories without the key)320.4
+383 R(.)-.585 E .765
+(CFS ensures that cleartext \214le contents and name data are never)320.4 393 R
+(stored on a disk or transmitted over a network.)320.4 403 Q 4.282
+(CFS presents a "virtual" \214le system on the client')342.9 416 R(s)-.495 E
+1.546(machine, typically mounted on)320.4 426 R/F2 9/Courier@0 SF(/crypt,)3.795
+E F0 1.545(through which users)3.795 F .645(access their encrypted \214les.)
+320.4 436 R .646(The attach command creates entries)5.146 F 1.155
+(in CFS \(which appear in)320.4 446 R F2(/crypt)3.404 E F0 3.404(\)t)C 1.154
+(hat associate cryptographic)457.718 446 R .71
+(keys with directories elsewhere in the system name space.)320.4 456 R(Files)
+5.21 E 1.215(are stored in encrypted form and with encrypted path names in)
+320.4 466 R 1.487
+(the associated standard directories, although they appear to the)320.4 476 R
+3.766(user who issued the attach command in clear form under)320.4 486 R F2
+(/crypt)320.4 496 Q F0 4.531(.T)C .032
+(he underlying encrypted directories can reside on any)365.08 496 R .903
+(accessible \214le system, including remote \214le servers such as Sun)320.4
+506 R .963(NFS[8] and AFS[1].)320.4 516 R .963
+(No space needs to be preallocated to CFS)5.463 F 2.611(directories. Users)
+320.4 526 R .361(control CFS through a small suite of tools that)2.611 F .882
+(create, attach, detach, and otherwise administer encrypted direc-)320.4 536 R
+(tories.)320.4 546 Q 1.487
+(Each directory is protected by set of cryptographic keys.)342.9 559 R .688
+(These keys can be supplied by user entry via the keyboard or)320.4 569 R 2.939
+(,i)-.36 G(f)555.003 569 Q 2.759
+(hardware is available, through removable "smart cards" con-)320.4 579 R .628
+(nected to the client computer)320.4 589 R 5.128(.W)-.495 G .628
+(hen entered from the keyboard,)442.772 589 R 1.602
+(keys take the form of arbitrary-length "passphrases" which are)320.4 599 R
+1.315(used to generate the set of internal cryptographic keys used by)320.4 609
+R(CFS')320.4 619 Q 4.824(se)-.495 G 2.574(ncryption routines.)351.234 619 R
+2.574(Passphrases must be of suf)7.074 F(\214cient)-.162 E .433
+(length to allow the creation of several independent keys; the cur)320.4 629 R
+(-)-.18 E .519(rent implementation requires at least 16 characters.)320.4 639 R
+.518(Phrases may)5.018 F 1.987
+(include any printable ASCII characters, and ideally consist of)320.4 649 R
+.315(easily remembered nonsense sentences with unusual punctuation,)320.4 659 R
+.195(capitalization and spelling \(e.g.,)320.4 669 R F2 .196
+("if you have nothing 2)2.446 F 1.508(hide you Have nothing too fear!")320.4
+679 R F0 3.757(\). In)B 1.507(the smart)3.757 F 1.907
+(card-based system, the keys are copied directly from the card)320.4 689 R .857
+(interface to the client computer after user entry of a card access)320.4 699 R
+.914(password that is checked on the card itself.)320.4 709 R .915
+(Section 3 describes)5.415 F 1.012
+(the algorithms used to encrypt \214le contents and \214le names with)320.4 719
+R(the keys.)320.4 729 Q EP
+%%Page: 4 4
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 9/Times-Roman@0 SF(The)83.7 64 Q/F1 9/Courier@0 SF(cmkdir)2.343 E F0 .093
+(command is used to create encrypted directo-)2.343 F .969
+(ries and assign their keys.)61.2 74 R .968
+(Its operation is similar to that of the)5.468 F(Unix)61.2 84 Q F1(mkdir)2.308
+E F0 .059(command with the addition that it asks for a key)2.308 F 4.559(.I)
+-.585 G(n)294.3 84 Q 1.153(the examples that follow)61.2 94 R 3.403(,w)-.585 G
+3.403(es)164.965 94 S 1.153(how dialogs for the "passphrase")175.865 94 R .442
+(version; the smart card version is similar but with prompts to the)61.2 104 R
+.172(user to insert a card and enter its password.)61.2 114 R .171
+(The following dialog)4.672 F(creates an encrypted directory called)61.2 124 Q
+F1(/usr/mab/secrets)2.25 E F0(:)A/F2 8/Courier@0 SF($)66 139 Q/F3 8
+/Times-Bold@0 SF(cmkdir /usr/mab/secr)4.8 E(ets)-.144 E F2(Key:)66 149 Q/F4 8
+/Times-Italic@0 SF(\(user enters passphrase, which does not echo\))4.8 E F2
+(Again:)66 159 Q F4(\(same phrase enter)4.8 E(ed again to pr)-.296 E(event err)
+-.296 E(ors\))-.296 E F2($)66 169 Q F0 2.069 -.63(To u)83.7 187 T .809
+(se an encrypted directory).63 F 3.059(,i)-.585 G .809
+(ts key must be supplied to)201.001 187 R 3.823(CFS with the)61.2 197 R F1
+(cattach)6.073 E F0(command.)6.072 E F1(cattach)8.322 E F0 3.822(takes three)
+6.072 F .406(parameters: an encryption key \(which is prompted for\), the name)
+61.2 207 R .65(of a directory previously created with)61.2 217 R F1(cmkdir)2.9
+E F0 2.9(,a)C .649(nd a name that)244.112 217 R .829
+(will be used to access the directory under the CFS mount point.)61.2 227 R
+1.291(For example, to attach the directory created above to the name)61.2 237 R
+F1(/crypt/matt:)61.2 247 Q F2($)66 262 Q F3(cattach /usr/mab/secr)4.8 E
+(ets matt)-.144 E F2(Key:)66 272 Q F4(\(same key used in the cmkdir command\))
+4.8 E F2($)66 282 Q F0 6.078(If the key is supplied correctly)83.7 300 R 8.329
+(,t)-.585 G 6.079(he user "sees")236.314 300 R F1(/crypt/matt)61.2 310 Q F0
+1.926(as a normal directory; all standard operations)4.176 F 2.346
+(\(creating, reading, writing, compiling, executing,)61.2 320 R F1(cd)4.596 E
+F0(,)A F1(mkdir)4.596 E F0(,)A 3.907(etc.\) work as expected.)61.2 330 R 3.907
+(The actual \214les are stored under)8.407 F F1(/usr/mab/secrets)61.2 340 Q F0
+5.41(,w)C 3.161(hich would not ordinarily be used)161.758 340 R(directly)61.2
+350 Q 6.059(.C)-.585 G 1.558
+(onsider the following dialog, which creates a single)102.422 350 R
+(encrypted \214le:)61.2 360 Q F2($)66 375 Q F3(ls -l /crypt)4.8 E F2(total 1)66
+385 Q(drwx------ 2 mab 512 Apr 1 15:56 matt)66 395 Q($)66 405 Q F3
+(echo "murder" > /crypt/matt/crimes)4.8 E F2($)66 415 Q F3(ls -l /crypt/matt)
+4.8 E F2(total 1)66 425 Q(-rw-rw-r-- 1 mab)66 435 Q 4.8(7A)157.2 435 S
+(pr 1 15:57 crimes)171.6 435 Q($)66 445 Q F3(cat /crypt/matt/crimes)4.8 E F2
+(murder)66 455 Q($)66 465 Q F3(ls -l /usr/mab/secr)4.8 E(ets)-.144 E F2
+(total 1)66 475 Q(-rw-rw-r-- 1 mab)66 485 Q(15 Apr 1 15:57 8b06e85b87091124)9.6
+E($)66 495 Q F3(cat -v /usr/mab/secr)4.8 E(ets/8b06e85b87091)-.144 E(124)-.44 E
+F2(M-Z,k^]^B^VM-VM-6A~uM-LM-_M-DM-^[)66 505 Q($)66 515 Q F0 1.135
+(When the user is \214nished with an encrypted directory)83.7 533 R 3.385(,i)
+-.585 G(ts)292.797 533 Q 1.743(entry under)61.2 543 R F1(/crypt)3.993 E F0
+1.743(can be deleted with the)3.993 F F1(cdetach)3.993 E F0(com-)3.993 E 2.3
+(mand. Of)61.2 553 R .051
+(course, the underlying encrypted directory remains and)2.3 F
+(may be attached again at some future time.)61.2 563 Q F2($)66 578 Q F3
+(cdetach matt)4.8 E F2($)66 588 Q F3(ls -l /crypt)4.8 E F2(total 0)66 598 Q($)
+66 608 Q F3(ls -l /usr/mab/secr)4.8 E(ets)-.144 E F2(total 1)66 618 Q
+(-rw-rw-r-- 1 mab)66 628 Q(15 Apr 1 15:57 8b06e85b87091124)9.6 E($)66 638 Q F0
+.879(File names are encrypted and encoded in an ASCII repre-)83.7 656 R .265
+(sentation of their binary encrypted value padded out to the cipher)61.2 666 R
+2.114(block size of eight bytes.)61.2 676 R 2.113
+(Note that this reduces by approxi-)6.613 F 1.736
+(mately half the maximum path component and \214le name size,)61.2 686 R 1.388
+(since names stored on the disk are twice as long as their clear)61.2 696 R
+4.448(counterparts. Encrypted)61.2 706 R 2.199
+(\214les may themselves be expanded to)4.448 F .525
+(accommodate cipher block boundaries, and therefore can occupy)61.2 716 R 4.737
+(up to one eight byte encryption block of extra storage.)61.2 726 R 1.238
+(Otherwise, encrypted \214les place no special requirements on the)320.4 64 R
+(underlying \214le system.)320.4 74 Q .489
+(Encrypted directories can be backed up along with the rest)342.9 87 R .264
+(of the \214le system.)320.4 97 R(The)4.764 E F1(cname)2.514 E F0 .263
+(program translates back and forth)2.514 F 1.459
+(between cleartext names and their encrypted counterparts for a)320.4 107 R
+1.359(particular key)320.4 117 R 3.609(,a)-.585 G 1.359
+(llowing the appropriate \214le name to be located)380.763 117 R .67
+(from backups if needed.)320.4 127 R .67(If the system on which CFS is running)
+5.17 F 2.736(should become unavailable, encrypted \214les can be decrypted)
+320.4 137 R(individually)320.4 147 Q 4.961(,g)-.585 G 2.711(iven a key)375.032
+147 R 4.961(,u)-.585 G 2.711(sing the)428.57 147 R F1(ccat)4.961 E F0 4.962
+(program. Neither)4.962 F F1(cname)320.4 157 Q F0(nor)3.169 E F1(ccat)3.169 E
+F0 .919(require that the rest of CFS be running or be)3.169 F 2.106
+(installed, and both run without modi\214cation under most Unix)320.4 167 R
+4.453(platforms. This)320.4 177 R 2.203
+(helps ensure that encrypted \214le contents will)4.453 F .591
+(always be recoverable, even if no machine is available on which)320.4 187 R
+(to run the full CFS system.)320.4 197 Q/F5 9/Times-Bold@0 SF 2.25
+(2.3. Security)320.4 217 R(and T)2.25 E(rust Model)-.666 E F0 .768
+(Most security mechanisms in computer systems are aimed)342.9 230 R .906
+(at authenticating the users and clients of services and resources.)320.4 240 R
+.61(Servers typically mistrust those who request services from them,)320.4 250
+R .933(and the protocols for obtaining access typically re\215ect the secu-)
+320.4 260 R .281(rity needs of the server)320.4 270 R 4.781(.I)-.495 G 2.531
+(nt)413.534 270 S .281(he case of a \214le system, the converse)423.067 270 R
+.221(relationship is true as well; the user must be sure that the \214le sys-)
+320.4 280 R 3.14(tem will not reveal private data without authorization.)320.4
+290 R(File)7.639 E .6
+(encryption can be viewed as a mechanism for enforcing mistrust)320.4 300 R
+(of servers by their clients.)320.4 310 Q 1.015
+(CFS protects \214le contents and \214le names by guaranteeing)342.9 323 R
+1.137(that they are never sent in clear form to the \214le system.)320.4 333 R
+(When)5.637 E .965
+(run on a client machine in a distributed \214le system, this protec-)320.4 343
+R .087(tion extends to \214le system traf)320.4 353 R .088
+(\214c sent over the network.)-.162 F .088(In ef)4.588 F(fect,)-.162 E 2.643
+(it provides end-to-end encryption between the client and the)320.4 363 R .962
+(server without any actual encryption required at the server side.)320.4 373 R
+.665(The server need only be trusted to actually store \(and eventually)320.4
+383 R .324(return\) the bits that were originally sent to it.)320.4 393 R .324
+(Of course, the user)4.824 F .735
+(must still trust the client system on which CFS is running, since)320.4 403 R
+2.433(that system manages the keys and cleartext for the currently)320.4 413 R
+(attached encrypted directories.)320.4 423 Q 1.456
+(Some data are not protected, however)342.9 436 R 5.956(.F)-.495 G 1.455
+(ile sizes, access)498.858 436 R .741
+(times, and the structure of the directory hierarchy are all kept in)320.4 446
+R .188(the clear)320.4 456 R 4.688(.\()-.495 G .188
+(Symbolic link pointers are, however)360.763 456 R 2.438(,e)-.36 G 2.437
+(ncrypted.\) This)500.573 456 R 2.411(makes CFS vulnerable to traf)320.4 466 R
+2.411(\214c analysis from both real-time)-.162 F .485
+(observation and snapshots of the underlying \214les; whether this is)320.4 476
+R(acceptable must be evaluated for each application.)320.4 486 Q .51
+(It is important to emphasize that CFS protects data only in)342.9 499 R .279
+(the context of the \214le system.)320.4 509 R .278
+(It is not, in itself, a complete, gen-)4.778 F .456
+(eral purpose cryptographic security system.)320.4 519 R .457
+(Once bits have been)4.957 F 1.014
+(returned to a user program, they are beyond the reach of CFS')320.4 529 R(s)
+-.495 E 2.817(protection. This)320.4 539 R .567
+(means that even with CFS, sensitive data might)2.817 F .596
+(be written to a paging device when a program is swapped out or)320.4 549 R
+.467(revealed in a trace of a program')320.4 559 R 2.717(sa)-.495 G .467
+(ddress space.)450.371 559 R .468(Systems where)4.967 F .052
+(the paging device is on a remote \214le system are especially vulner)320.4 569
+R(-)-.18 E .384(able to this sort of attack.)320.4 579 R .384
+(\(It is theoretically possible to use CFS)4.884 F .18
+(as a paging \214le system, although the current implementation does)320.4 589
+R .351(not readily support this in practice.\))320.4 599 R .351
+(Note also that CFS does not)4.851 F .414
+(protect the links between users and the client machines on which)320.4 609 R
+1.079(CFS runs; users connected via networked terminals remain vul-)320.4 619 R
+(nerable if these links are not otherwise secured.)320.4 629 Q 1.556
+(Access to attached directories is controlled by restricting)342.9 642 R .905
+(the virtual directories created under)320.4 652 R F1(/crypt)3.156 E F0 .906
+(using the standard)3.156 F 1.43(Unix \214le protection mechanism.)320.4 662 R
+1.43(Only the user who issued the)5.93 F F1(cattach)320.4 672 Q F0 .408
+(command is permitted to see or use the cleartext \214les.)2.657 F .838
+(This is based on the)320.4 682 R/F6 9/Times-Italic@0 SF(uid)3.088 E F0 .837
+(of the user; an attacker who can obtain)3.088 F 1.366
+(access to a client machine and compromise a user account can)320.4 692 R 1.052
+(use any of that user)320.4 702 R 2.041 -.495('s c).333 H 1.051
+(urrently attached directories.).495 F 1.051(If this is a)5.551 F 1.251
+(concern, the attached name can be marked)320.4 712 R F6(obscur)3.501 E(e,)
+-.333 E F0 1.251(which pre-)3.501 F .589
+(vents it from appearing in a listing of)320.4 722 R F1(/crypt)2.839 E F0 5.089
+(.W)C .589(hen an attach)509.338 722 R EP
+%%Page: 5 5
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 9/Times-Roman@0 SF .464
+(is made obscure, the attacker must guess its current name, which)61.2 64 R
+1.491(can be randomly chosen by the real user)61.2 74 R 5.991(.O)-.495 G 3.741
+(fc)230.595 74 S 1.491(ourse, attackers)241.329 74 R .031
+(who can become the "superuser" on the client machine can thwart)61.2 84 R .071
+(any protection scheme, including this; such an intruder has access)61.2 94 R
+.306(to the entire address space of the kernel and can read \(or modify\))61.2
+104 R(any data anywhere in the system.)61.2 114 Q 2.338
+(The security of the system is lar)83.7 127 R 2.338(gely dependent on the)-.162
+F .628(secrecy of the encryption keys and the inability of an attacker to)61.2
+137 R 1.115(guess them.)61.2 147 R 1.114
+(Although an exhaustive search of the key space is)5.615 F 2.162
+(probably computationally infeasible to all but the most deter)61.2 157 R(-)
+-.18 E .86(mined and well funded adversary)61.2 167 R 3.11(,p)-.585 G .86
+(oorly chosen keys can make)193.885 167 R .38(the attacker)61.2 177 R 1.37
+-.495('s j).333 H .38(ob much easier).495 F 4.881(.T)-.495 G .381
+(his risk is especially great when)182.163 177 R .232
+(keys are chosen directly by the user)61.2 187 R 4.732(.T)-.495 G 2.482(or)
+202.414 187 S .231(educe the risk of dictio-)212.393 187 R 1.738
+(nary-based attacks, and to provide enough entropy to generate)61.2 197 R 3.066
+(several independent subkeys, passphrase-based keys must be)61.2 207 R 1.007
+(fairly lengthy)61.2 217 R 5.507(.T)-.585 G(he)123.622 217 Q/F1 9/Courier@0 SF
+(cmkdir)3.257 E F0 1.007(program can be easily modi\214ed to)3.257 F .924
+(enforce passphrase selection rules, such as minimum length and)61.2 227 R
+4.839(alphabetical variety)61.2 237 R 7.089(,t)-.585 G 4.84
+(hat promote the use of good keys.)148.026 237 R 1.206
+(Passphrase-based keys also carry a risk of compromise through)61.2 247 R 2.914
+(user carelessness or "social engineering"; these risks can be)61.2 257 R
+(reduced somewhat with user training.)61.2 267 Q .821
+(The smart card based system uses the cards themselves to)83.7 280 R 2.768
+(generate and store the actual encryption keys; here the user)61.2 290 R .303
+(passphrase is used only to control access to the card.)61.2 300 R .303
+(Note that it)4.803 F 1.861
+(is theoretically possible to design a system in which the keys)61.2 310 R
+1.269(never leave the smart card and all cryptographic operations are)61.2 320
+R 1.362(performed on the card itself.)61.2 330 R 1.362(CFS, however)5.862 F
+3.612(,t)-.36 G 1.362(ransfers the keys)235.596 330 R .715
+(from the card to the client machine and performs \214le encryption)61.2 340 R
+.018(there, since the bandwidth to generally available card interfaces is)61.2
+350 R(too low for \214le system use.)61.2 360 Q 3.096 -.72(We d)83.7 373 T
+1.656(iscuss possible attacks against our prototype imple-).72 F
+(mentation in Section 4, below)61.2 383 Q(.)-.585 E/F2 9/Times-Bold@0 SF 2.25
+(3. File)61.2 403 R(Encryption)2.25 E F0 .806
+(CFS uses DES to encrypt \214le data.)83.7 416 R .806(DES has a number of)5.306
+F .015(standard modes of operation[6], none of which is completely suit-)61.2
+426 R .715(able for encrypting \214les on-line in a \214le system.)61.2 436 R
+.715(In the simplest)5.215 F .931(DES mode,)61.2 446 R/F3 9/Times-Italic@0 SF
+.931(ECB \(electr)3.181 F .93(onic code book\),)-.333 F F0 .93
+(each 8 byte block of a)3.18 F 1.464
+(\214le is independently encrypted with the given key)61.2 456 R 5.964(.E)-.585
+G(ncryption)264.303 456 Q .6
+(and decryption can be performed randomly on any block bound-)61.2 466 R(ary)
+61.2 476 Q 5.793(.A)-.585 G 1.294
+(lthough this protects the data itself, it can reveal a great)86.649 476 R 1.12
+(deal about a \214le')61.2 486 R 3.37(ss)-.495 G 1.12
+(tructure \255 a given block of cleartext always)134.675 486 R 1.39
+(encrypts to the same ciphertext, and so repeated blocks can be)61.2 496 R .542
+(easily identi\214ed as such.)61.2 506 R .542
+(Other modes of DES operation include)5.042 F(various)61.2 516 Q F3(chaining)
+3.413 E F0 1.164(ciphers that base the encryption of a block on)3.413 F 1.816
+(the data that preceded it.)61.2 526 R 1.815
+(These defeat the kinds of structural)6.315 F 1.501
+(analysis possible with ECB mode, but make it dif)61.2 536 R 1.502
+(\214cult to ran-)-.162 F .24(domly read or write in constant time.)61.2 546 R
+.24(For example, a write to the)4.74 F .013
+(middle of a \214le could require reading the data that preceded it and)61.2
+556 R .313(reenciphering and rewriting the data that follow it.)61.2 566 R .313
+(Unix \214le sys-)4.813 F 1.752(tem semantics, however)61.2 576 R 4.002(,r)-.36
+G 1.752(equire approximately uniform access)160.326 576 R
+(time for random blocks of the \214le.)61.2 586 Q 1.722(Compounding this dif)
+83.7 599 R 1.721(\214culty are concerns that the 56 bit)-.162 F 1.582
+(key size of DES is vulnerable to exhaustive search of the key)61.2 609 R 4.312
+(space. DES)61.2 619 R 2.062(keys can be made ef)4.312 F 2.062
+(fectively longer by multiple)-.162 F 2.911
+(encryption with independently chosen 56 bit keys.)61.2 629 R(Unfortu-)7.411 E
+(nately)61.2 639 Q 2.532(,D)-.585 G .282
+(ES is computationally rather expensive, especially when)93.891 639 R .874
+(implemented in software.)61.2 649 R .874
+(It is likely that multiple on-line itera-)5.374 F 1.06
+(tions of the DES algorithm would be prohibitively slow for \214le)61.2 659 R
+(system applications.)61.2 669 Q 2.205 -.63(To a)83.7 682 T .945
+(llow random access to \214les but still discourage struc-).63 F 1.1
+(tural analysis and provide greater protection than a single itera-)61.2 692 R
+.996(tion ECB mode cipher)61.2 702 R 3.246(,C)-.36 G .996
+(FS encrypts \214le contents in two ways.)156.075 702 R .279
+(Recall that CFS keys are long "passphrases".)61.2 712 R .279
+(When the phrase is)4.779 F .708
+(provided at attach time, it is "crunched" into two separate 56 bit)61.2 722 R
+1.989(DES keys.)320.4 64 R 1.989
+(The \214rst key is used to pre-compute a long \(half)6.489 F 2.409
+(megabyte\) pseudo-random bit mask with DES')320.4 74 R(s)-.495 E F3 2.41
+(OFB \(output)4.66 F 1.033(feed back\))320.4 84 R F0 3.283(mode. This)3.283 F
+1.033(mask is stored for the life of the attach.)3.283 F .17
+(When a \214le block is to be written, it is \214rst exclusive-or)320.4 94 R
+.171('d \(XOR\)).333 F .941
+(with the part of the mask corresponding to its byte of)320.4 104 R .94
+(fset in the)-.162 F 2.096(\214le modulo the precomputed mask length.)320.4 114
+R 2.096(The result is then)6.596 F .376
+(encrypted with the second key using standard ECB mode.)320.4 124 R(When)4.876
+E 3.126(reading, the cipher is reversed in the obvious manner: \214rst)320.4
+134 R 2.817(decrypt in ECB mode, then XOR with the positional mask.)320.4 144 R
+.932(Observe that this allows uniform random access time across the)320.4 154 R
+1.014(entire size of the pre-computed mask \(but not insertion or dele-)320.4
+164 R .808(tion of text\).)320.4 174 R .808
+(File block boundaries are preserved as long as the)5.308 F .847
+(cipher block size is a multiple of the block size, as it is in most)320.4 184
+R 3.41(systems. Applications)320.4 194 R 1.16
+(that optimize their \214le I/O to fall on \214le)3.41 F 2.552
+(system block boundaries \(including programs using the Unix)320.4 204 R F1
+(stdio)320.4 214 Q F0 2.028
+(library\) therefore maintain their expected performance)4.278 F
+(characteristics without modi\214cation.)320.4 224 Q 1.053
+(This combination of DES modes guarantees that identical)342.9 237 R 1.162
+(blocks will encrypt to dif)320.4 247 R 1.162
+(ferent ciphertext depending upon their)-.162 F .169(positions in a \214le.)
+320.4 257 R .168(It does admit some kinds of structural analysis)4.669 F 1.458
+(across \214les, however)320.4 267 R 5.958(.I)-.495 G 3.708(ti)409.257 267 S
+3.708(sp)417.969 267 S 1.458(ossible to determine which blocks)429.678 267 R
+.446(are identical \(and in the same place\) in two \214les encrypted under)
+320.4 277 R(the same key \(e.g., in the same directory hierarchy\).)320.4 287 Q
+.144(The strength of the ECB+OFB scheme is not well analyzed)342.9 300 R .64
+(in the literature \(it may be new \255 there appear to be no previous)320.4
+310 R .74(references to this technique\), and such an analysis is beyond the)
+320.4 320 R .833(scope of this paper)320.4 330 R 5.333(.H)-.495 G(owever)
+404.219 330 Q 3.083(,a)-.36 G 3.083(ta)439.675 330 S .832
+(minimum, it is clear that the)-.001 F .219
+(protection against attack is at least as strong as a single DES pass)320.4 340
+R 1.843(in ECB mode and may be as strong as two passes with DES)320.4 350 R .33
+(stream mode ciphers.)320.4 360 R .331
+(It is likely that the scheme is weakened, in)4.83 F .179
+(that the attacker might be able to search for the two DES subkeys)320.4 370 R
+(independently)320.4 380 Q 2.31(,i)-.585 G 2.31(ft)377.871 380 S .061
+(here are several known plaintext \214les encrypted)385.68 380 R
+(under the same keys.)320.4 390 Q 1.537 -.63(To t)342.9 403 T .277
+(hwart analysis of identical blocks in the same positions).63 F .893(of dif)
+320.4 413 R .893
+(ferent \214les, each \214le encrypted under the same key can be)-.162 F 1.85
+(perturbed with a unique "initial vector" \(IV\).)320.4 423 R 1.849
+(Standard block-)6.349 F .663
+(chaining encryption modes \(such as CBC\) prepend the IV to the)320.4 433 R
+1.014(data stream \(e.g. the beginning of the \214le\) and XOR successive)320.4
+443 R .287(blocks with the ciphertext of the previous block, starting with the)
+320.4 453 R(IV)320.4 463 Q 5.365(.A)-1.161 G 3.115(sl)342.847 463 S .865
+(ong as each \214le has a dif)351.965 463 R .865(ferent IV)-.162 F 3.114(,i)
+-1.161 G .864(dentical blocks will)485.775 463 R 2.138(encrypt dif)320.4 473 R
+(ferently)-.162 E 6.638(.U)-.585 G(nfortunately)404.407 473 Q 4.388(,t)-.585 G
+2.138(he chaining modes do not)456.954 473 R .787
+(permit random update within a \214le, so an encrypting \214le system)320.4 483
+R .19(cannot use them directly)320.4 493 R 4.69(.I)-.585 G .19
+(nstead, CFS simply XORs each cipher)418.558 493 R .384
+(block with the same IV throughout the \214le prior to the \214nal ECB)320.4
+503 R 1.588(mode encryption or after the ECB decryption, just as with the)320.4
+513 R(OFB mask.)320.4 523 Q .184
+(File IVs are generated from the inode number of the under)342.9 536 R(-)-.18 E
+.839(lying \214le at creation time, which generally remains unique for a)320.4
+546 R(\214le')320.4 556 Q 2.625(sl)-.495 G 2.625(ifetime. Since)343.032 556 R
+.375(the IV is required for decryption, it must be)2.625 F .813
+(stored along with the \214le.)320.4 566 R .814
+(Inode numbers may not be preserved)5.314 F .504
+(after a \214le system backup/restore operation, so it is not suf)320.4 576 R
+(\214cient)-.162 E .963
+(to rely on the inode number remaining constant over time.)320.4 586 R(The)
+5.463 E .99(IV could be stored at the beginning of each \214le, but that would)
+320.4 596 R .924(shift \214le contents away from block boundaries or)320.4 606
+R 3.175(,i)-.36 G 3.175(fp)511.159 606 S .925(added out)521.831 606 R .368
+(to an entire block, waste space.)320.4 616 R .367
+(The natural place to store the IV)4.868 F .442
+(would be in the inode itself, along with the \214le')320.4 626 R 2.692(so)
+-.495 G .442(ther attributes.)505.565 626 R(However)320.4 636 Q 2.875(,b)-.36 G
+.625(ecause CFS sits above the \214le system used for actual)362.65 636 R .049
+(storage and uses system calls for all its I/O, it has no direct access)320.4
+646 R 1.227(to inode \214elds and cannot therefore add new \214le attributes.)
+320.4 656 R -.63(To)5.726 G(store the IV)320.4 666 Q 2.25(,C)-1.161 G
+(FS must co-opt an existing inode \214eld.)372.231 666 Q .444
+(Since all of the inode \214elds are used for some purpose and)342.9 679 R .01
+(can be changed outside of CFS')320.4 689 R 2.26(sc)-.495 G .01
+(ontrol, using an existing \214eld is)444.444 689 R 2.414(ar)320.4 699 S .164
+(ather treacherous proposition.)329.807 699 R .164(CFS therefore of)4.664 F
+.165(fers two modes)-.162 F .566
+(of encryption that are selected at the time an encrypted directory)320.4 709 R
+1.908(is created.)320.4 719 R 1.908
+(In the standard mode, no IV is used and \214les are)6.408 F 1.238
+(therefore subject to analysis of identical blocks.)320.4 729 R 1.238
+(In the second,)5.738 F EP
+%%Page: 6 6
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 9/Times-Roman@0 SF .319
+("high security" mode, the IV is stored in the group id \()61.2 64 R/F1 9
+/Courier@0 SF(gid)A F0 2.569<298c>C(eld)287.802 64 Q .528(of each \214le')61.2
+74 R 2.778(si)-.495 G 2.778(node. In)113.526 74 R .528
+(this mode, CFS reports the group owner)2.778 F(-)-.18 E .446
+(ship of the root directory of the encrypted hierarchy as the group)61.2 84 R
+.117(for each \214le within it; it is not possible to have dif)61.2 94 R .117
+(ferent \214les with)-.162 F(dif)61.2 104 Q .038
+(ferent group ownership in the same directory)-.162 F 4.539(.N)-.585 G .039
+(ote that a \214le')245.934 104 R(s)-.495 E .83
+(group could be changed outside CFS, so this mode does carry a)61.2 114 R 1.564
+(small risk of unrecoverable data if both the inode number and)61.2 124 R .685
+(group of a \214le change.)61.2 134 R .685
+(Standard backup and restore procedures,)5.185 F(however)61.2 144 Q 2.25(,d)
+-.36 G 2.25(oo)100.827 144 S(rdinarily preserve the group.)112.077 144 Q 5.187
+(Encryption of pathname components uses a similar)83.7 157 R .466
+(scheme, with the addition that the high order bits of the cleartext)61.2 167 R
+1.666(name \(which are normally zero\) are set to a simple checksum)61.2 177 R
+1.08(computed over the entire name string.)61.2 187 R 1.08
+(This frustrates structural)5.58 F .482(analysis of long names that dif)61.2
+197 R .483(fer only in the last few characters.)-.162 F
+(The same method is used to encrypt symbolic link pointers.)61.2 207 Q/F2 9
+/Times-Bold@0 SF 2.25(4. Pr)61.2 227 R(ototype Implementation)-.162 E F0 1.441
+(Of considerable practical signi\214cance is whether the per)83.7 240 R(-)-.18
+E .064(formance penalty of on-line \214le system encryption is too great for)
+61.2 250 R 1.575(routine use.)61.2 260 R 1.575
+(The prototype CFS implementation is intended to)6.075 F 1.877
+(help answer this question as well as provide some experience)61.2 270 R
+(with practical applications of secure \214le storage.)61.2 280 Q F2 2.25
+(4.1. Ar)61.2 300 R(chitectur)-.162 E(e)-.162 E F0 1.358
+(The CFS prototype is implemented entirely at user level,)83.7 313 R .154
+(communicating with the Unix kernel via the NFS interface.)61.2 323 R(Each)
+4.654 E .627(client machine runs a special NFS server)61.2 333 R(,)-.36 E F1
+(cfsd)2.877 E F0 .627(\(CFS Daemon\),)2.877 F .151(on its)61.2 343 R/F3 9
+/Times-Italic@0 SF(localhost)2.401 E F0 .151
+(interface, that interprets CFS \214le system requests.)2.401 F 2.675
+(At boot time, the system invokes)61.2 353 R F1(cfsd)4.925 E F0 2.674
+(and issues an NFS)4.925 F F1(mount)61.2 363 Q F0 5.515
+(of its localhost interface on the CFS directory)7.764 F F1(\(/crypt\))61.2 373
+Q F0 .795(to start CFS.)3.045 F(\(T)5.295 E 3.045(oa)-.63 G .795
+(llow the client to also work as a)178.998 373 R 1.44(regular NFS server)61.2
+383 R 3.691(,C)-.36 G 1.441(FS runs on a dif)144.146 383 R 1.441
+(ferent port number from)-.162 F(standard NFS.\))61.2 393 Q .959
+(The NFS protocol is designed for remote \214le servers, and)83.7 406 R 1.76
+(so assumes that the \214le system is very loosely coupled to the)61.2 416 R
+1.664(client \(even though, in CFS')61.2 426 R 3.913(sc)-.495 G 1.663
+(ase, they are actually the same)181.018 426 R 3.453(machine\). The)61.2 436 R
+1.204(client kernel communicates with the \214le system)3.453 F 1.141
+(through 17)61.2 446 R F3 -.333(re)3.391 G 1.141(mote pr).333 F(ocedur)-.333 E
+3.391(ec)-.333 G 1.141(alls \(RPCs\))176.743 446 R F0 1.14
+(that implement vari-)3.391 F .072
+(ous \214le system-related primitives \(read, write, etc.\).)61.2 456 R .072
+(The server is)4.572 F F3(stateless,)61.2 466 Q F0 2.192
+(in that it is not required to maintain any state data)4.442 F
+(between individual client calls.)61.2 476 Q .174
+(NFS clients cache \214le blocks to enhance \214le system perfor)83.7 489 R(-)
+-.18 E .628
+(mance \(reducing the need to issue requests to the server\); a sim-)61.2 499 R
+2.043(ple protocol managed by the client maintains some degree of)61.2 509 R
+.995(cache consistency)61.2 519 R 5.495(.A)-.585 G .994
+(ll communication is initiated by the client,)140.581 519 R .429
+(and the server can simply process each RPC as it is received and)61.2 529 R
+.385(then wait for the next.)61.2 539 R .385
+(Most of the complexity of an NFS imple-)4.885 F 1.115
+(mentation is in the generic client side of the interface, and it is)61.2 549 R
+1.641(therefore often possible to implement new \214le system services)61.2 559
+R(entirely by adding a simple NFS server)61.2 569 Q(.)-.495 E F1(cfsd)83.7 582
+Q F0 1.531(is implemented as an RPC server for an extended)3.781 F 1.889
+(version of the NFS protocol.)61.2 592 R 1.889(Additional RPCs attach, detach,)
+6.389 F .622(and otherwise control encrypted directories.)61.2 602 R(Initially)
+5.122 E 2.872(,t)-.585 G .622(he root of)262.563 602 R 1.361
+(the CFS \214le system appears as an empty directory)61.2 612 R 5.86(.T)-.585 G
+(he)265.094 612 Q F1(cat-)3.61 E(tach)61.2 622 Q F0 .369
+(command sends an RPC to)2.619 F F1(cfsd)2.619 E F0 .369(with ar)2.619 F .369
+(guments contain-)-.162 F 1.44
+(ing the full path name of a directory \(mounted elsewhere\), the)61.2 632 R
+.646(name of the "attach point", and the key)61.2 642 R 5.146(.I)-.585 G 2.896
+(ft)215.848 642 S .646(he key is correct \(as)224.243 642 R .304
+(veri\214ed by a special \214le in the directory encrypted with a hash of)61.2
+652 R 3.718(the supplied key\),)61.2 662 R F1(cfsd)5.968 E F0 3.719
+(computes the cryptographic mask)5.968 F .263
+(\(described in the previous section\) and creates an entry in its root)61.2
+672 R .377(directory under the speci\214ed attach point name.)61.2 682 R .377
+(The attach point)4.877 F 1.355
+(entry appears as a directory owned by the user who issued the)61.2 692 R 1.189
+(attach request, with a protection mode of 700 to prevent others)61.2 702 R
+4.153(from seeing its contents.)61.2 712 R 4.152(\(Attachs marked as)8.652 F F3
+(obscur)6.402 E(e,)-.333 E F0(as)6.402 E .698
+(described in Section 2, do not appear in the directory)61.2 722 R 2.949(,h)
+-.585 G(owever\).)267.066 722 Q .615
+(File system operations in the attached directory are sent as regu-)320.4 64 R
+(lar NFS RPCs to)320.4 74 Q F1(cfsd)2.25 E F0
+(via the standard NFS client interface.)2.25 E 1.362
+(For each encrypted \214le accessed through an attach point,)342.9 87 R F1
+(cfsd)320.4 97 Q F0 1.571(generates a unique)3.821 F F3 1.571(\214le handle)
+3.821 F F0 1.571(that is used by the client)3.821 F .531
+(NFS interface to refer to the \214le.)320.4 107 R .532
+(For each attach point, the CFS)5.032 F 2.33
+(daemon maintains a table of handles and their corresponding)320.4 117 R 2.082
+(underlying encrypted names.)320.4 127 R 2.083(When a read or write operation)
+6.582 F .971
+(occurs, the handle is used as an index into this table to \214nd the)320.4 137
+R 1.53(underlying \214le name.)320.4 147 R F1(cfsd)6.03 E F0 1.53
+(uses regular Unix system calls to)3.78 F .442
+(read and write the \214le contents, which are encrypted before writ-)320.4 157
+R 3.942(ing and decrypted after reading, as appropriate.)320.4 167 R 5.202 -.63
+(To a)8.442 H(void).63 E(repeated)320.4 177 Q F3(open)2.43 E F0(and)2.43 E F3
+(close)2.43 E F0(calls,)2.43 E F1(cfsd)2.43 E F0 .18
+(also maintains a small cache)2.43 F .083
+(of \214le descriptors for \214les on which there have been recent opera-)320.4
+187 R 3.681(tions. Directory)320.4 197 R 1.431
+(and symbolic link operations, such as)3.681 F F3 -.333(re)3.681 G(addir).333 E
+(,)-.999 E -.333(re)320.4 207 S(adlink,).333 E F0(and)2.589 E F3(lookup)2.589 E
+F0 .34(are similarly translated into appropriate sys-)2.59 F
+(tem calls and encrypted and decrypted as needed.)320.4 217 Q 4.913 -.63(To p)
+342.9 230 T 3.653(revent intruders from issuing RPC calls to CFS).63 F .22
+(directly \(and thereby thwarting the protection mechanism\),)320.4 240 R F1
+(cfsd)2.47 E F0 1.412
+(only accepts RPCs that originate from a privileged port on the)320.4 250 R
+.762(local machine.)320.4 260 R .762
+(Responses to the RPCs are also returned only to)5.262 F .682
+(the localhost port, and \214le handles include a cryptographic com-)320.4 270
+R .052(ponent selected at attach time to prevent an attacker on a dif)320.4 280
+R(ferent)-.162 E
+(machine from spoo\214ng one side of a transaction with the server)320.4 290 Q
+(.)-.495 E .079(It is instructive to compare the \215ow of data under CFS with)
+342.9 303 R .956
+(that taken under the standard, unencrypted \214le system interface.)320.4 313
+R 2.379(Figure 1 shows the architecture of the interfaces between an)320.4 323
+R 1.72(application program and the ordinary Sun "vnode-based" Unix)320.4 333 R
+.646(\214le system[2].)320.4 343 R .646
+(Each arrow between boxes represents data cross-)5.146 F .545
+(ing a kernel, hardware, or network boundary; the diagram shows)320.4 353 R
+.308(that data written from an application are \214rst copied to the kernel)
+320.4 363 R .469(and then to the \(local or remote\) \214le system.)320.4 373 R
+.469(Figure 2 shows the)4.969 F 2.042(architecture of the user)320.4 383 R
+2.042(-level CFS prototype.)-.18 F 2.042(Data are copied)6.542 F 1.813
+(several extra times; from the application, to the kernel, to the)320.4 393 R
+.169(CFS daemon, back to the kernel, and \214nally to the underlying \214le)
+320.4 403 R 3.036(system. Since)320.4 413 R .786(CFS uses user)3.036 F .787
+(-level system calls to communicate)-.18 F .126
+(with the underlying \214le system, each \214le is cached twice, once by)320.4
+423 R 3.612(CFS in clear form and once by the underlying system in)320.4 433 R
+.437(encrypted form.)320.4 443 R .437(This ef)4.937 F .436
+(fectively reduces the available \214le buf)-.162 F(fer)-.162 E
+(cache space by a factor of two.)320.4 453 Q F2 2.25(4.2. Performance)320.4 473
+R F1(cfsd)342.9 486 Q F0 1.529
+(is considerably simpler than a full \214le system.)3.779 F(In)6.029 E
+(particular)320.4 496 Q 3.524(,i)-.36 G 3.524(tk)362.804 496 S 1.273
+(nows nothing about the actual storage of \214les on)373.33 496 R .715
+(disks, relying on the underlying \214le systems to take care of this.)320.4
+506 R 4.237(This simplicity can come at the expense of performance.)320.4 516 R
+.261(Because it runs at user level, using system calls to store data, and)320.4
+526 R .014(because it communicates with its client through an RPC interface,)
+320.4 536 R .6(CFS must perform several extraneous data copies for each client)
+320.4 546 R 2.581(request. Each)320.4 556 R .331
+(copy carries with it considerable potential copying)2.581 F 1.549
+(and context switch overhead.)320.4 566 R 1.549
+(The DES encryption code itself,)6.049 F .571
+(which is implemented in software[3], dominates the cost of each)320.4 576 R
+.162(\214le system request \(although it is the fastest software DES imple-)
+320.4 586 R .841(mentation of which we are aware\).)320.4 596 R .84
+(CFS access could, based on)5.341 F .538
+(worst case analysis of its components, take several times as long)320.4 606 R
+(as the underlying storage.)320.4 616 Q 1.73 -.72(We m)342.9 629 T .29
+(easured CFS under a variety of workloads.).72 F .29(For com-)4.79 F 1.295
+(parison, we also ran each workload on the underlying cleartext)320.4 639 R
+1.23(\214le system and again on the underlying system through a user)320.4 649
+R(-)-.18 E 1.763
+(level encryption \214lter tool that implements a multimode DES-)320.4 659 R
+2.319(based cipher similar to that in CFS.)320.4 669 R 2.319
+(All measurements were)6.819 F .263
+(taken on an unloaded Sun Sparc IPX workstation running SunOS)320.4 679 R .488
+(4.1.2 with 32 MB of memory and a locally connected SCSI Sea-)320.4 689 R .164
+(gate model Elite 16000 disk drive.)320.4 699 R .164
+(Each benchmark was also run)4.664 F 3.263(as)320.4 709 S 1.012
+(econd time on similar hardware but with the underlying \214les)331.16 709 R
+.903(on an NFS \214le system connected over a lightly-loaded network.)320.4 719
+R 1.87(In the tables below)320.4 729 R(,)-.585 E F2(CFS-LOCAL)4.12 E F0(and)
+4.12 E F2(CFS-NFS)4.12 E F0 1.869(indicate the)4.119 F EP
+%%Page: 7 7
+%%BeginPageSetup
+BP
+%%EndPageSetup
+45 9 213.516 351.96 DE .44 LW ST 45 9 213.516 315.96 DE ST 104.76 127.32 101.16
+127.32 DL 112.104 127.32 108.504 127.32 DL 119.448 127.32 115.848 127.32 DL
+126.792 127.32 123.192 127.32 DL 134.136 127.32 130.536 127.32 DL 141.48 127.32
+137.88 127.32 DL 148.752 127.32 145.152 127.32 DL 156.096 127.32 152.496 127.32
+DL 163.44 127.32 159.84 127.32 DL 170.784 127.32 167.184 127.32 DL 178.128
+127.32 174.528 127.32 DL 185.472 127.32 181.872 127.32 DL 192.816 127.32
+189.216 127.32 DL 200.16 127.32 196.56 127.32 DL 207.504 127.32 203.904 127.32
+DL 214.848 127.32 211.248 127.32 DL 222.12 127.32 218.52 127.32 DL 229.464
+127.32 225.864 127.32 DL 236.808 127.32 233.208 127.32 DL 244.152 127.32
+240.552 127.32 DL 251.496 127.32 247.896 127.32 DL 258.84 127.32 255.24 127.32
+DL 258.84 123.72 258.84 127.32 DL 258.84 116.88 258.84 120.48 DL 258.84 110.04
+258.84 113.64 DL 258.84 103.2 258.84 106.8 DL 258.84 96.36 258.84 99.96 DL
+258.84 89.52 258.84 93.12 DL 258.84 82.68 258.84 86.28 DL 258.84 75.84 258.84
+79.44 DL 258.84 69 258.84 72.6 DL 255.24 69 258.84 69 DL 247.896 69 251.496 69
+DL 240.552 69 244.152 69 DL 233.208 69 236.808 69 DL 225.864 69 229.464 69 DL
+218.52 69 222.12 69 DL 211.248 69 214.848 69 DL 203.904 69 207.504 69 DL 196.56
+69 200.16 69 DL 189.216 69 192.816 69 DL 181.872 69 185.472 69 DL 174.528 69
+178.128 69 DL 167.184 69 170.784 69 DL 159.84 69 163.44 69 DL 152.496 69
+156.096 69 DL 145.152 69 148.752 69 DL 137.88 69 141.48 69 DL 130.536 69
+134.136 69 DL 123.192 69 126.792 69 DL 115.848 69 119.448 69 DL 108.504 69
+112.104 69 DL 101.16 69 104.76 69 DL 101.16 72.6 101.16 69 DL 101.16 79.44
+101.16 75.84 DL 101.16 86.28 101.16 82.68 DL 101.16 93.12 101.16 89.52 DL
+101.16 99.96 101.16 96.36 DL 101.16 106.8 101.16 103.2 DL 101.16 113.64 101.16
+110.04 DL 101.16 120.48 101.16 116.88 DL 101.16 127.32 101.16 123.72 DL 104.76
+230.28 101.16 230.28 DL 112.104 230.28 108.504 230.28 DL 119.448 230.28 115.848
+230.28 DL 126.792 230.28 123.192 230.28 DL 134.136 230.28 130.536 230.28 DL
+141.48 230.28 137.88 230.28 DL 148.752 230.28 145.152 230.28 DL 156.096 230.28
+152.496 230.28 DL 163.44 230.28 159.84 230.28 DL 170.784 230.28 167.184 230.28
+DL 178.128 230.28 174.528 230.28 DL 185.472 230.28 181.872 230.28 DL 192.816
+230.28 189.216 230.28 DL 200.16 230.28 196.56 230.28 DL 207.504 230.28 203.904
+230.28 DL 214.848 230.28 211.248 230.28 DL 222.12 230.28 218.52 230.28 DL
+229.464 230.28 225.864 230.28 DL 236.808 230.28 233.208 230.28 DL 244.152
+230.28 240.552 230.28 DL 251.496 230.28 247.896 230.28 DL 258.84 230.28 255.24
+230.28 DL 258.84 226.68 258.84 230.28 DL 258.84 219.408 258.84 223.008 DL
+258.84 212.136 258.84 215.736 DL 258.84 204.864 258.84 208.464 DL 258.84
+197.592 258.84 201.192 DL 258.84 190.32 258.84 193.92 DL 258.84 183.048 258.84
+186.648 DL 258.84 175.776 258.84 179.376 DL 258.84 168.504 258.84 172.104 DL
+258.84 161.232 258.84 164.832 DL 258.84 153.96 258.84 157.56 DL 255.24 153.96
+258.84 153.96 DL 247.896 153.96 251.496 153.96 DL 240.552 153.96 244.152 153.96
+DL 233.208 153.96 236.808 153.96 DL 225.864 153.96 229.464 153.96 DL 218.52
+153.96 222.12 153.96 DL 211.248 153.96 214.848 153.96 DL 203.904 153.96 207.504
+153.96 DL 196.56 153.96 200.16 153.96 DL 189.216 153.96 192.816 153.96 DL
+181.872 153.96 185.472 153.96 DL 174.528 153.96 178.128 153.96 DL 167.184
+153.96 170.784 153.96 DL 159.84 153.96 163.44 153.96 DL 152.496 153.96 156.096
+153.96 DL 145.152 153.96 148.752 153.96 DL 137.88 153.96 141.48 153.96 DL
+130.536 153.96 134.136 153.96 DL 123.192 153.96 126.792 153.96 DL 115.848
+153.96 119.448 153.96 DL 108.504 153.96 112.104 153.96 DL 101.16 153.96 104.76
+153.96 DL 101.16 157.56 101.16 153.96 DL 101.16 164.832 101.16 161.232 DL
+101.16 172.104 101.16 168.504 DL 101.16 179.376 101.16 175.776 DL 101.16
+186.648 101.16 183.048 DL 101.16 193.92 101.16 190.32 DL 101.16 201.192 101.16
+197.592 DL 101.16 208.464 101.16 204.864 DL 101.16 215.736 101.16 212.136 DL
+101.16 223.008 101.16 219.408 DL 101.16 230.28 101.16 226.68 DL 249.48 113.64
+163.8 113.64 DL 249.48 77.64 249.48 113.64 DL 163.8 77.64 249.48 77.64 DL 163.8
+113.64 163.8 77.64 DL 249.48 181.32 163.8 181.32 DL 249.48 163.32 249.48 181.32
+DL 163.8 163.32 249.48 163.32 DL 163.8 181.32 163.8 163.32 DL 249.48 217.32
+163.8 217.32 DL 249.48 199.32 249.48 217.32 DL 163.8 199.32 249.48 199.32 DL
+163.8 217.32 163.8 199.32 DL 209.016 216.96 209.016 216.96 DL 213.48 198.96
+213.48 180.96 DL 213.48 180.96 211.68 188.16 DL 215.28 188.16 213.48 180.96 DL
+213.48 198.96 215.28 191.76 DL 211.68 191.76 213.48 198.96 DL 213.48 162.96
+213.48 113.496 DL 213.48 113.496 211.68 120.696 DL 215.28 120.696 213.48
+113.496 DL 213.48 162.96 215.28 155.76 DL 211.68 155.76 213.48 162.96 DL 213.48
+284.424 213.48 216.96 DL 213.48 216.96 211.68 224.16 DL 215.28 224.16 213.48
+216.96 DL 213.48 284.424 215.28 277.224 DL 211.68 277.224 213.48 284.424 DL
+104.76 360.6 101.16 360.6 DL 112.104 360.6 108.504 360.6 DL 119.448 360.6
+115.848 360.6 DL 126.792 360.6 123.192 360.6 DL 134.136 360.6 130.536 360.6 DL
+141.48 360.6 137.88 360.6 DL 148.752 360.6 145.152 360.6 DL 156.096 360.6
+152.496 360.6 DL 163.44 360.6 159.84 360.6 DL 170.784 360.6 167.184 360.6 DL
+178.128 360.6 174.528 360.6 DL 185.472 360.6 181.872 360.6 DL 192.816 360.6
+189.216 360.6 DL 200.16 360.6 196.56 360.6 DL 207.504 360.6 203.904 360.6 DL
+214.848 360.6 211.248 360.6 DL 222.12 360.6 218.52 360.6 DL 229.464 360.6
+225.864 360.6 DL 236.808 360.6 233.208 360.6 DL 244.152 360.6 240.552 360.6 DL
+251.496 360.6 247.896 360.6 DL 258.84 360.6 255.24 360.6 DL 258.84 357 258.84
+360.6 DL 258.84 349.512 258.84 353.112 DL 258.84 342.096 258.84 345.696 DL
+258.84 334.608 258.84 338.208 DL 258.84 327.12 258.84 330.72 DL 258.84 319.704
+258.84 323.304 DL 258.84 312.216 258.84 315.816 DL 258.84 304.8 258.84 308.4 DL
+258.84 297.312 258.84 300.912 DL 258.84 289.824 258.84 293.424 DL 258.84
+282.408 258.84 286.008 DL 258.84 274.92 258.84 278.52 DL 255.24 274.92 258.84
+274.92 DL 247.896 274.92 251.496 274.92 DL 240.552 274.92 244.152 274.92 DL
+233.208 274.92 236.808 274.92 DL 225.864 274.92 229.464 274.92 DL 218.52 274.92
+222.12 274.92 DL 211.248 274.92 214.848 274.92 DL 203.904 274.92 207.504 274.92
+DL 196.56 274.92 200.16 274.92 DL 189.216 274.92 192.816 274.92 DL 181.872
+274.92 185.472 274.92 DL 174.528 274.92 178.128 274.92 DL 167.184 274.92
+170.784 274.92 DL 159.84 274.92 163.44 274.92 DL 152.496 274.92 156.096 274.92
+DL 145.152 274.92 148.752 274.92 DL 137.88 274.92 141.48 274.92 DL 130.536
+274.92 134.136 274.92 DL 123.192 274.92 126.792 274.92 DL 115.848 274.92
+119.448 274.92 DL 108.504 274.92 112.104 274.92 DL 101.16 274.92 104.76 274.92
+DL 101.16 278.52 101.16 274.92 DL 101.16 286.008 101.16 282.408 DL 101.16
+293.424 101.16 289.824 DL 101.16 300.912 101.16 297.312 DL 101.16 308.4 101.16
+304.8 DL 101.16 315.816 101.16 312.216 DL 101.16 323.304 101.16 319.704 DL
+101.16 330.72 101.16 327.12 DL 101.16 338.208 101.16 334.608 DL 101.16 345.696
+101.16 342.096 DL 101.16 353.112 101.16 349.512 DL 101.16 360.6 101.16 357 DL
+191.016 351.96 191.016 315.96 DL 235.944 351.96 235.944 315.96 DL 249.48 302.28
+163.8 302.28 DL 249.48 284.28 249.48 302.28 DL 163.8 284.28 249.48 284.28 DL
+163.8 302.28 163.8 284.28 DL 213.48 320.424 213.48 302.424 DL 213.48 302.424
+211.68 309.624 DL 215.28 309.624 213.48 302.424 DL 213.48 320.424 215.28
+313.224 DL 211.68 313.224 213.48 320.424 DL/F0 9/Helvetica@0 SF(User-Level)
+105.48 87.044 Q(Application)105.48 100.14 Q(Unix)105.48 181.14 Q(Kernel)105.48
+194.604 Q(Any)186.48 91.14 Q(Program)186.48 104.604 Q(Sys. Call Interface)
+173.016 176.604 Q(System Calls)118.944 145.14 Q(FS Client)173.016 212.604 Q
+(File System Inteface)114.48 244.14 Q(\(local\))105.48 212.604 Q
+(\(local or remote\))105.48 334.14 Q(File)105.48 307.14 Q(System)105.48 320.676
+Q(Storage)195.48 329.676 Q(Media)195.48 343.14 Q(FS Svr)173.016 298.14 Q 2.502
+(.I)-.495 G(nterface)207.531 298.14 Q(Cleartext)114.48 257.676 Q
+(\(local or remote\))114.48 271.14 Q/F1 9/Times-Bold@0 SF(Figur)78.39 380.1 Q
+2.25(e1\255D)-.162 G(ata Flow in Standard Vnode File System)126.603 380.1 Q/F2
+9/Times-Roman@0 SF 1.458
+(CFS measurements for the local and NFS \214le systems, respec-)61.2 400.1 R
+(tively)61.2 410.1 Q(,)-.585 E F1(CLEAR-LOCAL)4.592 E F2(and)4.592 E F1
+(CLEAR-NFS)4.592 E F2 2.341(indicate measure-)4.592 F .438
+(ments of the underlying \214le systems, and)61.2 420.1 R F1(USER)2.689 E -.162
+(TO)-.315 G(OL-LOCAL).162 E F2(and)61.2 430.1 Q F1(USER)3.548 E -.162(TO)-.315
+G(OL-NFS).162 E F2 1.297(indicate measurements of the user)3.548 F(-level)-.18
+E 1.264(encryption tool under the two \214le systems.)61.2 440.1 R 1.264
+(All numbers repre-)5.764 F 1.616
+(sent the mean of three runs; variances between runs were low)61.2 450.1 R
+1.011(enough to be virtually insigni\214cant.)61.2 460.1 R 1.012
+(All times are given in sec-)5.512 F 1.855
+(onds of elapsed real time used by each of the various bench-)61.2 470.1 R
+(marks.)61.2 480.1 Q .614
+(The \214rst benchmark simply copied in and read back a sin-)83.7 493.1 R 1.354
+(gle lar)61.2 503.1 R 1.354(ge \(1.6MB\) \214le.)-.162 F 1.353
+(This measured the cost of both writing)5.854 F 1.057
+(and reading, including the ef)61.2 513.1 R 1.057
+(fects of whatever caching was per)-.162 F(-)-.18 E .032
+(formed by the \214le systems.)61.2 523.1 R .032
+(Because CFS is mounted via the NFS)4.532 F .764
+(interface, it does not perform any write caching, and this limita-)61.2 533.1
+R 1.393(tion was most dramatically re\215ected in the performance results)61.2
+543.1 R .012
+(against the underlying local \214le system: CFS was roughly a factor)61.2
+553.1 R 1.029(of 22 slower)61.2 563.1 R 5.529(.T)-.495 G 1.029
+(he manual encryption tool, however)121.032 563.1 R 3.279(,f)-.36 G 1.029
+(ared even)263.04 563.1 R 1.646(more poorly)61.2 573.1 R 3.896(,s)-.585 G 1.646
+(ince its output is uncached on both reading and)116.152 573.1 R .488
+(writing: it was slower than the underlying \214le system by a factor)61.2
+583.1 R .287(of more than 200.)61.2 593.1 R -.36(Wi)4.787 G .287
+(th NFS as the underlying storage, CFS per).36 F(-)-.18 E 1.142
+(formance was much more reasonable, less than a factor of four)61.2 603.1 R
+.451(slower than the underlying system.)61.2 613.1 R .451
+(The manual tool slowed per)4.951 F(-)-.18 E .851
+(formance by a factor of more than 1)61.2 623.1 R 3.1(1. These)-.333 F .85
+(measurements are)3.1 F(summarized in Figure 3.)61.2 633.1 Q 2.941
+(Changing the benchmark to magnify read performance)83.7 646.1 R .88
+(under the cache narrows the performance gap between CFS and)61.2 656.1 R .562
+(the underlying storage.)61.2 666.1 R .563
+(Figure 4 gives the results of copying the)5.062 F .307
+(same \214le once but then reading it \214fty times.)61.2 676.1 R .306
+(Note the especially)4.807 F 1.262(poor performance of user)61.2 686.1 R 1.263
+(-level encryption under this workload,)-.18 F
+(since the encrypted results are never cached.)61.2 696.1 Q .863
+(The cost of creation of small encrypted \214les is bound pri-)83.7 709.1 R
+.717(marily to the actual storage system and the system call and con-)61.2
+719.1 R 3.59(text-switch overhead rather than the actual encryption.)61.2 729.1
+R -.72(We)8.089 G 45 9 473.436 599.424 DE ST 45 9 473.436 563.424 DE ST 364.68
+127.32 361.08 127.32 DL 372.024 127.32 368.424 127.32 DL 379.368 127.32 375.768
+127.32 DL 386.712 127.32 383.112 127.32 DL 394.056 127.32 390.456 127.32 DL
+401.4 127.32 397.8 127.32 DL 408.672 127.32 405.072 127.32 DL 416.016 127.32
+412.416 127.32 DL 423.36 127.32 419.76 127.32 DL 430.704 127.32 427.104 127.32
+DL 438.048 127.32 434.448 127.32 DL 445.392 127.32 441.792 127.32 DL 452.736
+127.32 449.136 127.32 DL 460.08 127.32 456.48 127.32 DL 467.424 127.32 463.824
+127.32 DL 474.768 127.32 471.168 127.32 DL 482.04 127.32 478.44 127.32 DL
+489.384 127.32 485.784 127.32 DL 496.728 127.32 493.128 127.32 DL 504.072
+127.32 500.472 127.32 DL 511.416 127.32 507.816 127.32 DL 518.76 127.32 515.16
+127.32 DL 518.76 123.72 518.76 127.32 DL 518.76 116.88 518.76 120.48 DL 518.76
+110.04 518.76 113.64 DL 518.76 103.2 518.76 106.8 DL 518.76 96.36 518.76 99.96
+DL 518.76 89.52 518.76 93.12 DL 518.76 82.68 518.76 86.28 DL 518.76 75.84
+518.76 79.44 DL 518.76 69 518.76 72.6 DL 515.16 69 518.76 69 DL 507.816 69
+511.416 69 DL 500.472 69 504.072 69 DL 493.128 69 496.728 69 DL 485.784 69
+489.384 69 DL 478.44 69 482.04 69 DL 471.168 69 474.768 69 DL 463.824 69
+467.424 69 DL 456.48 69 460.08 69 DL 449.136 69 452.736 69 DL 441.792 69
+445.392 69 DL 434.448 69 438.048 69 DL 427.104 69 430.704 69 DL 419.76 69
+423.36 69 DL 412.416 69 416.016 69 DL 405.072 69 408.672 69 DL 397.8 69 401.4
+69 DL 390.456 69 394.056 69 DL 383.112 69 386.712 69 DL 375.768 69 379.368 69
+DL 368.424 69 372.024 69 DL 361.08 69 364.68 69 DL 361.08 72.6 361.08 69 DL
+361.08 79.44 361.08 75.84 DL 361.08 86.28 361.08 82.68 DL 361.08 93.12 361.08
+89.52 DL 361.08 99.96 361.08 96.36 DL 361.08 106.8 361.08 103.2 DL 361.08
+113.64 361.08 110.04 DL 361.08 120.48 361.08 116.88 DL 361.08 127.32 361.08
+123.72 DL 509.4 113.64 423.72 113.64 DL 509.4 77.64 509.4 113.64 DL 423.72
+77.64 509.4 77.64 DL 423.72 113.64 423.72 77.64 DL 473.4 162.96 473.4 113.496
+DL 473.4 113.496 471.6 120.696 DL 475.2 120.696 473.4 113.496 DL 473.4 162.96
+475.2 155.76 DL 471.6 155.76 473.4 162.96 DL 509.4 302.28 423.72 302.28 DL
+509.4 284.28 509.4 302.28 DL 423.72 284.28 509.4 284.28 DL 423.72 302.28 423.72
+284.28 DL 509.4 360.6 423.72 360.6 DL 509.4 324.6 509.4 360.6 DL 423.72 324.6
+509.4 324.6 DL 423.72 360.6 423.72 324.6 DL 473.4 284.424 473.4 216.96 DL 473.4
+216.96 471.6 224.16 DL 475.2 224.16 473.4 216.96 DL 473.4 284.424 475.2 277.224
+DL 471.6 277.224 473.4 284.424 DL 364.68 230.28 361.08 230.28 DL 372.024 230.28
+368.424 230.28 DL 379.368 230.28 375.768 230.28 DL 386.712 230.28 383.112
+230.28 DL 394.056 230.28 390.456 230.28 DL 401.4 230.28 397.8 230.28 DL 408.672
+230.28 405.072 230.28 DL 416.016 230.28 412.416 230.28 DL 423.36 230.28 419.76
+230.28 DL 430.704 230.28 427.104 230.28 DL 438.048 230.28 434.448 230.28 DL
+445.392 230.28 441.792 230.28 DL 452.736 230.28 449.136 230.28 DL 460.08 230.28
+456.48 230.28 DL 467.424 230.28 463.824 230.28 DL 474.768 230.28 471.168 230.28
+DL 482.04 230.28 478.44 230.28 DL 489.384 230.28 485.784 230.28 DL 496.728
+230.28 493.128 230.28 DL 504.072 230.28 500.472 230.28 DL 511.416 230.28
+507.816 230.28 DL 518.76 230.28 515.16 230.28 DL 518.76 226.68 518.76 230.28 DL
+518.76 219.408 518.76 223.008 DL 518.76 212.136 518.76 215.736 DL 518.76
+204.864 518.76 208.464 DL 518.76 197.592 518.76 201.192 DL 518.76 190.32 518.76
+193.92 DL 518.76 183.048 518.76 186.648 DL 518.76 175.776 518.76 179.376 DL
+518.76 168.504 518.76 172.104 DL 518.76 161.232 518.76 164.832 DL 518.76 153.96
+518.76 157.56 DL 515.16 153.96 518.76 153.96 DL 507.816 153.96 511.416 153.96
+DL 500.472 153.96 504.072 153.96 DL 493.128 153.96 496.728 153.96 DL 485.784
+153.96 489.384 153.96 DL 478.44 153.96 482.04 153.96 DL 471.168 153.96 474.768
+153.96 DL 463.824 153.96 467.424 153.96 DL 456.48 153.96 460.08 153.96 DL
+449.136 153.96 452.736 153.96 DL 441.792 153.96 445.392 153.96 DL 434.448
+153.96 438.048 153.96 DL 427.104 153.96 430.704 153.96 DL 419.76 153.96 423.36
+153.96 DL 412.416 153.96 416.016 153.96 DL 405.072 153.96 408.672 153.96 DL
+397.8 153.96 401.4 153.96 DL 390.456 153.96 394.056 153.96 DL 383.112 153.96
+386.712 153.96 DL 375.768 153.96 379.368 153.96 DL 368.424 153.96 372.024
+153.96 DL 361.08 153.96 364.68 153.96 DL 361.08 157.56 361.08 153.96 DL 361.08
+164.832 361.08 161.232 DL 361.08 172.104 361.08 168.504 DL 361.08 179.376
+361.08 175.776 DL 361.08 186.648 361.08 183.048 DL 361.08 193.92 361.08 190.32
+DL 361.08 201.192 361.08 197.592 DL 361.08 208.464 361.08 204.864 DL 361.08
+215.736 361.08 212.136 DL 361.08 223.008 361.08 219.408 DL 361.08 230.28 361.08
+226.68 DL 509.4 181.32 423.72 181.32 DL 509.4 163.32 509.4 181.32 DL 423.72
+163.32 509.4 163.32 DL 423.72 181.32 423.72 163.32 DL 509.4 217.32 423.72
+217.32 DL 509.4 199.32 509.4 217.32 DL 423.72 199.32 509.4 199.32 DL 423.72
+217.32 423.72 199.32 DL 468.936 216.96 468.936 216.96 DL 473.4 198.96 473.4
+180.96 DL 473.4 180.96 471.6 188.16 DL 475.2 188.16 473.4 180.96 DL 473.4
+198.96 475.2 191.76 DL 471.6 191.76 473.4 198.96 DL 473.4 324.96 473.4 302.424
+DL 473.4 302.424 471.6 309.624 DL 475.2 309.624 473.4 302.424 DL 473.4 324.96
+475.2 317.76 DL 471.6 317.76 473.4 324.96 DL 364.68 369.96 361.08 369.96 DL
+372.024 369.96 368.424 369.96 DL 379.368 369.96 375.768 369.96 DL 386.712
+369.96 383.112 369.96 DL 394.056 369.96 390.456 369.96 DL 401.4 369.96 397.8
+369.96 DL 408.672 369.96 405.072 369.96 DL 416.016 369.96 412.416 369.96 DL
+423.36 369.96 419.76 369.96 DL 430.704 369.96 427.104 369.96 DL 438.048 369.96
+434.448 369.96 DL 445.392 369.96 441.792 369.96 DL 452.736 369.96 449.136
+369.96 DL 460.08 369.96 456.48 369.96 DL 467.424 369.96 463.824 369.96 DL
+474.768 369.96 471.168 369.96 DL 482.04 369.96 478.44 369.96 DL 489.384 369.96
+485.784 369.96 DL 496.728 369.96 493.128 369.96 DL 504.072 369.96 500.472
+369.96 DL 511.416 369.96 507.816 369.96 DL 518.76 369.96 515.16 369.96 DL
+518.76 366.36 518.76 369.96 DL 518.76 359.376 518.76 362.976 DL 518.76 352.392
+518.76 355.992 DL 518.76 345.408 518.76 349.008 DL 518.76 338.424 518.76
+342.024 DL 518.76 331.44 518.76 335.04 DL 518.76 324.456 518.76 328.056 DL
+518.76 317.544 518.76 321.144 DL 518.76 310.56 518.76 314.16 DL 518.76 303.576
+518.76 307.176 DL 518.76 296.592 518.76 300.192 DL 518.76 289.608 518.76
+293.208 DL 518.76 282.624 518.76 286.224 DL 518.76 275.64 518.76 279.24 DL
+515.16 275.64 518.76 275.64 DL 507.816 275.64 511.416 275.64 DL 500.472 275.64
+504.072 275.64 DL 493.128 275.64 496.728 275.64 DL 485.784 275.64 489.384
+275.64 DL 478.44 275.64 482.04 275.64 DL 471.168 275.64 474.768 275.64 DL
+463.824 275.64 467.424 275.64 DL 456.48 275.64 460.08 275.64 DL 449.136 275.64
+452.736 275.64 DL 441.792 275.64 445.392 275.64 DL 434.448 275.64 438.048
+275.64 DL 427.104 275.64 430.704 275.64 DL 419.76 275.64 423.36 275.64 DL
+412.416 275.64 416.016 275.64 DL 405.072 275.64 408.672 275.64 DL 397.8 275.64
+401.4 275.64 DL 390.456 275.64 394.056 275.64 DL 383.112 275.64 386.712 275.64
+DL 375.768 275.64 379.368 275.64 DL 368.424 275.64 372.024 275.64 DL 361.08
+275.64 364.68 275.64 DL 361.08 279.24 361.08 275.64 DL 361.08 286.224 361.08
+282.624 DL 361.08 293.208 361.08 289.608 DL 361.08 300.192 361.08 296.592 DL
+361.08 307.176 361.08 303.576 DL 361.08 314.16 361.08 310.56 DL 361.08 321.144
+361.08 317.544 DL 361.08 328.056 361.08 324.456 DL 361.08 335.04 361.08 331.44
+DL 361.08 342.024 361.08 338.424 DL 361.08 349.008 361.08 345.408 DL 361.08
+355.992 361.08 352.392 DL 361.08 362.976 361.08 359.376 DL 361.08 369.96 361.08
+366.36 DL 473.4 531.96 473.4 464.424 DL 473.4 464.424 471.6 471.624 DL 475.2
+471.624 473.4 464.424 DL 473.4 531.96 475.2 524.76 DL 471.6 524.76 473.4 531.96
+DL 364.68 477.96 361.08 477.96 DL 372.024 477.96 368.424 477.96 DL 379.368
+477.96 375.768 477.96 DL 386.712 477.96 383.112 477.96 DL 394.056 477.96
+390.456 477.96 DL 401.4 477.96 397.8 477.96 DL 408.672 477.96 405.072 477.96 DL
+416.016 477.96 412.416 477.96 DL 423.36 477.96 419.76 477.96 DL 430.704 477.96
+427.104 477.96 DL 438.048 477.96 434.448 477.96 DL 445.392 477.96 441.792
+477.96 DL 452.736 477.96 449.136 477.96 DL 460.08 477.96 456.48 477.96 DL
+467.424 477.96 463.824 477.96 DL 474.768 477.96 471.168 477.96 DL 482.04 477.96
+478.44 477.96 DL 489.384 477.96 485.784 477.96 DL 496.728 477.96 493.128 477.96
+DL 504.072 477.96 500.472 477.96 DL 511.416 477.96 507.816 477.96 DL 518.76
+477.96 515.16 477.96 DL 518.76 474.36 518.76 477.96 DL 518.76 467.088 518.76
+470.688 DL 518.76 459.816 518.76 463.416 DL 518.76 452.544 518.76 456.144 DL
+518.76 445.272 518.76 448.872 DL 518.76 438 518.76 441.6 DL 518.76 430.728
+518.76 434.328 DL 518.76 423.456 518.76 427.056 DL 518.76 416.184 518.76
+419.784 DL 518.76 408.912 518.76 412.512 DL 518.76 401.64 518.76 405.24 DL
+515.16 401.64 518.76 401.64 DL 507.816 401.64 511.416 401.64 DL 500.472 401.64
+504.072 401.64 DL 493.128 401.64 496.728 401.64 DL 485.784 401.64 489.384
+401.64 DL 478.44 401.64 482.04 401.64 DL 471.168 401.64 474.768 401.64 DL
+463.824 401.64 467.424 401.64 DL 456.48 401.64 460.08 401.64 DL 449.136 401.64
+452.736 401.64 DL 441.792 401.64 445.392 401.64 DL 434.448 401.64 438.048
+401.64 DL 427.104 401.64 430.704 401.64 DL 419.76 401.64 423.36 401.64 DL
+412.416 401.64 416.016 401.64 DL 405.072 401.64 408.672 401.64 DL 397.8 401.64
+401.4 401.64 DL 390.456 401.64 394.056 401.64 DL 383.112 401.64 386.712 401.64
+DL 375.768 401.64 379.368 401.64 DL 368.424 401.64 372.024 401.64 DL 361.08
+401.64 364.68 401.64 DL 361.08 405.24 361.08 401.64 DL 361.08 412.512 361.08
+408.912 DL 361.08 419.784 361.08 416.184 DL 361.08 427.056 361.08 423.456 DL
+361.08 434.328 361.08 430.728 DL 361.08 441.6 361.08 438 DL 361.08 448.872
+361.08 445.272 DL 361.08 456.144 361.08 452.544 DL 361.08 463.416 361.08
+459.816 DL 361.08 470.688 361.08 467.088 DL 361.08 477.96 361.08 474.36 DL
+509.4 428.28 423.72 428.28 DL 509.4 410.28 509.4 428.28 DL 423.72 410.28 509.4
+410.28 DL 423.72 428.28 423.72 410.28 DL 509.4 464.28 423.72 464.28 DL 509.4
+446.28 509.4 464.28 DL 423.72 446.28 509.4 446.28 DL 423.72 464.28 423.72
+446.28 DL 468.936 464.424 468.936 464.424 DL 473.4 446.424 473.4 428.424 DL
+473.4 428.424 471.6 435.624 DL 475.2 435.624 473.4 428.424 DL 473.4 446.424
+475.2 439.224 DL 471.6 439.224 473.4 446.424 DL 364.68 608.28 361.08 608.28 DL
+372.024 608.28 368.424 608.28 DL 379.368 608.28 375.768 608.28 DL 386.712
+608.28 383.112 608.28 DL 394.056 608.28 390.456 608.28 DL 401.4 608.28 397.8
+608.28 DL 408.672 608.28 405.072 608.28 DL 416.016 608.28 412.416 608.28 DL
+423.36 608.28 419.76 608.28 DL 430.704 608.28 427.104 608.28 DL 438.048 608.28
+434.448 608.28 DL 445.392 608.28 441.792 608.28 DL 452.736 608.28 449.136
+608.28 DL 460.08 608.28 456.48 608.28 DL 467.424 608.28 463.824 608.28 DL
+474.768 608.28 471.168 608.28 DL 482.04 608.28 478.44 608.28 DL 489.384 608.28
+485.784 608.28 DL 496.728 608.28 493.128 608.28 DL 504.072 608.28 500.472
+608.28 DL 511.416 608.28 507.816 608.28 DL 518.76 608.28 515.16 608.28 DL
+518.76 604.68 518.76 608.28 DL 518.76 597.192 518.76 600.792 DL 518.76 589.776
+518.76 593.376 DL 518.76 582.288 518.76 585.888 DL 518.76 574.8 518.76 578.4 DL
+518.76 567.384 518.76 570.984 DL 518.76 559.896 518.76 563.496 DL 518.76 552.48
+518.76 556.08 DL 518.76 544.992 518.76 548.592 DL 518.76 537.504 518.76 541.104
+DL 518.76 530.088 518.76 533.688 DL 518.76 522.6 518.76 526.2 DL 515.16 522.6
+518.76 522.6 DL 507.816 522.6 511.416 522.6 DL 500.472 522.6 504.072 522.6 DL
+493.128 522.6 496.728 522.6 DL 485.784 522.6 489.384 522.6 DL 478.44 522.6
+482.04 522.6 DL 471.168 522.6 474.768 522.6 DL 463.824 522.6 467.424 522.6 DL
+456.48 522.6 460.08 522.6 DL 449.136 522.6 452.736 522.6 DL 441.792 522.6
+445.392 522.6 DL 434.448 522.6 438.048 522.6 DL 427.104 522.6 430.704 522.6 DL
+419.76 522.6 423.36 522.6 DL 412.416 522.6 416.016 522.6 DL 405.072 522.6
+408.672 522.6 DL 397.8 522.6 401.4 522.6 DL 390.456 522.6 394.056 522.6 DL
+383.112 522.6 386.712 522.6 DL 375.768 522.6 379.368 522.6 DL 368.424 522.6
+372.024 522.6 DL 361.08 522.6 364.68 522.6 DL 361.08 526.2 361.08 522.6 DL
+361.08 533.688 361.08 530.088 DL 361.08 541.104 361.08 537.504 DL 361.08
+548.592 361.08 544.992 DL 361.08 556.08 361.08 552.48 DL 361.08 563.496 361.08
+559.896 DL 361.08 570.984 361.08 567.384 DL 361.08 578.4 361.08 574.8 DL 361.08
+585.888 361.08 582.288 DL 361.08 593.376 361.08 589.776 DL 361.08 600.792
+361.08 597.192 DL 361.08 608.28 361.08 604.68 DL 450.936 599.424 450.936
+563.424 DL 495.864 599.424 495.864 563.424 DL 509.4 549.96 423.72 549.96 DL
+509.4 531.96 509.4 549.96 DL 423.72 531.96 509.4 531.96 DL 423.72 549.96 423.72
+531.96 DL 473.4 567.96 473.4 549.96 DL 473.4 549.96 471.6 557.16 DL 475.2
+557.16 473.4 549.96 DL 473.4 567.96 475.2 560.76 DL 471.6 560.76 473.4 567.96
+DL 473.4 410.424 473.4 360.96 DL 473.4 360.96 471.6 368.16 DL 475.2 368.16
+473.4 360.96 DL 473.4 410.424 475.2 403.224 DL 471.6 403.224 473.4 410.424 DL
+/F3 11/Times-Roman@0 SF(.)354.665 374.72 Q(.)357.329 374.72 Q(.)360.065 374.72
+Q(.)362.729 374.72 Q(.)365.393 374.72 Q(.)368.057 374.72 Q(.)370.793 374.72 Q
+(.)373.457 374.72 Q(.)376.121 374.72 Q(.)378.785 374.72 Q(.)381.521 374.72 Q(.)
+384.185 374.72 Q(.)386.849 374.72 Q(.)389.513 374.72 Q(.)392.249 374.72 Q(.)
+394.913 374.72 Q(.)397.577 374.72 Q(.)400.241 374.72 Q(.)402.977 374.72 Q(.)
+405.641 374.72 Q(.)408.305 374.72 Q(.)410.969 374.72 Q(.)413.705 374.72 Q(.)
+416.369 374.72 Q(.)419.033 374.72 Q(.)421.697 374.72 Q(.)424.433 374.72 Q(.)
+427.097 374.72 Q(.)429.761 374.72 Q(.)432.425 374.72 Q(.)435.161 374.72 Q(.)
+437.825 374.72 Q(.)440.489 374.72 Q(.)443.225 374.72 Q(.)445.889 374.72 Q(.)
+448.553 374.72 Q(.)451.217 374.72 Q(.)453.953 374.72 Q(.)456.617 374.72 Q(.)
+459.281 374.72 Q(.)461.945 374.72 Q(.)464.681 374.72 Q(.)467.345 374.72 Q(.)
+470.009 374.72 Q(.)472.673 374.72 Q(.)475.409 374.72 Q(.)478.073 374.72 Q(.)
+480.737 374.72 Q(.)483.401 374.72 Q(.)486.137 374.72 Q(.)488.801 374.72 Q(.)
+491.465 374.72 Q(.)494.129 374.72 Q(.)496.865 374.72 Q(.)499.529 374.72 Q(.)
+502.193 374.72 Q(.)504.857 374.72 Q(.)507.593 374.72 Q(.)510.257 374.72 Q(.)
+512.921 374.72 Q(.)515.585 374.72 Q(.)518.321 374.72 Q(.)520.985 374.72 Q(.)
+520.985 374.72 Q(.)520.985 372.056 Q(.)520.985 369.392 Q(.)520.985 366.728 Q(.)
+520.985 364.064 Q(.)520.985 361.4 Q(.)520.985 358.736 Q(.)520.985 356.144 Q(.)
+520.985 353.48 Q(.)520.985 350.816 Q(.)520.985 348.152 Q(.)520.985 345.488 Q(.)
+520.985 342.824 Q(.)520.985 340.16 Q(.)520.985 337.496 Q(.)520.985 334.832 Q(.)
+520.985 332.168 Q(.)520.985 329.504 Q(.)520.985 326.84 Q(.)520.985 324.176 Q(.)
+520.985 321.584 Q(.)520.985 318.92 Q(.)520.985 316.256 Q(.)520.985 313.592 Q(.)
+520.985 310.928 Q(.)520.985 308.264 Q(.)520.985 305.6 Q(.)520.985 302.936 Q(.)
+520.985 300.272 Q(.)520.985 297.608 Q(.)520.985 294.944 Q(.)520.985 292.28 Q(.)
+520.985 289.616 Q(.)520.985 287.024 Q(.)520.985 284.36 Q(.)520.985 281.696 Q(.)
+520.985 279.032 Q(.)520.985 276.368 Q(.)520.985 273.704 Q(.)520.985 271.04 Q(.)
+520.985 271.04 Q(.)518.321 271.04 Q(.)515.585 271.04 Q(.)512.921 271.04 Q(.)
+510.257 271.04 Q(.)507.593 271.04 Q(.)504.857 271.04 Q(.)502.193 271.04 Q(.)
+499.529 271.04 Q(.)496.865 271.04 Q(.)494.129 271.04 Q(.)491.465 271.04 Q(.)
+488.801 271.04 Q(.)486.137 271.04 Q(.)483.401 271.04 Q(.)480.737 271.04 Q(.)
+478.073 271.04 Q(.)475.409 271.04 Q(.)472.673 271.04 Q(.)470.009 271.04 Q(.)
+467.345 271.04 Q(.)464.681 271.04 Q(.)461.945 271.04 Q(.)459.281 271.04 Q(.)
+456.617 271.04 Q(.)453.953 271.04 Q(.)451.217 271.04 Q(.)448.553 271.04 Q(.)
+445.889 271.04 Q(.)443.225 271.04 Q(.)440.489 271.04 Q(.)437.825 271.04 Q(.)
+435.161 271.04 Q(.)432.425 271.04 Q(.)429.761 271.04 Q(.)427.097 271.04 Q(.)
+424.433 271.04 Q(.)421.697 271.04 Q(.)419.033 271.04 Q(.)416.369 271.04 Q(.)
+413.705 271.04 Q(.)410.969 271.04 Q(.)408.305 271.04 Q(.)405.641 271.04 Q(.)
+402.977 271.04 Q(.)400.241 271.04 Q(.)397.577 271.04 Q(.)394.913 271.04 Q(.)
+392.249 271.04 Q(.)389.513 271.04 Q(.)386.849 271.04 Q(.)384.185 271.04 Q(.)
+381.521 271.04 Q(.)378.785 271.04 Q(.)376.121 271.04 Q(.)373.457 271.04 Q(.)
+370.793 271.04 Q(.)368.057 271.04 Q(.)365.393 271.04 Q(.)362.729 271.04 Q(.)
+360.065 271.04 Q(.)357.329 271.04 Q(.)354.665 271.04 Q(.)354.665 271.04 Q(.)
+354.665 273.704 Q(.)354.665 276.368 Q(.)354.665 279.032 Q(.)354.665 281.696 Q
+(.)354.665 284.36 Q(.)354.665 287.024 Q(.)354.665 289.616 Q(.)354.665 292.28 Q
+(.)354.665 294.944 Q(.)354.665 297.608 Q(.)354.665 300.272 Q(.)354.665 302.936
+Q(.)354.665 305.6 Q(.)354.665 308.264 Q(.)354.665 310.928 Q(.)354.665 313.592 Q
+(.)354.665 316.256 Q(.)354.665 318.92 Q(.)354.665 321.584 Q(.)354.665 324.176 Q
+(.)354.665 326.84 Q(.)354.665 329.504 Q(.)354.665 332.168 Q(.)354.665 334.832 Q
+(.)354.665 337.496 Q(.)354.665 340.16 Q(.)354.665 342.824 Q(.)354.665 345.488 Q
+(.)354.665 348.152 Q(.)354.665 350.816 Q(.)354.665 353.48 Q(.)354.665 356.144 Q
+(.)354.665 358.736 Q(.)354.665 361.4 Q(.)354.665 364.064 Q(.)354.665 366.728 Q
+(.)354.665 369.392 Q(.)354.665 372.056 Q(.)354.665 374.72 Q F0(User-Level)365.4
+87.044 Q(Application)365.4 100.14 Q(Any)446.4 91.14 Q(Program)446.4 104.604 Q
+(NFS Svr)428.4 298.14 Q 2.502(.I)-.495 G(nterface)469.413 298.14 Q(Encryption/)
+428.4 338.676 Q(Decryption Engine)428.4 352.14 Q(CFS)365.4 316.14 Q
+(System Calls)378.864 145.14 Q(Unix)365.4 181.14 Q(Kernel)365.4 194.604 Q
+(Sys. Call Interface)432.936 176.604 Q(FS Client)432.936 212.604 Q(\(local\))
+365.4 212.604 Q(\(NFS\))475.902 212.604 Q(Daemon)365.4 329.676 Q(System Calls)
+378.864 392.676 Q(Unix)365.4 428.676 Q(Kernel)365.4 442.14 Q
+(Sys. Call Interface)432.936 424.14 Q(FS Client)432.936 460.14 Q
+(File System Inteface)374.4 491.676 Q(\(local\))365.4 460.14 Q
+(\(local or remote\))365.4 581.676 Q(File)365.4 554.676 Q(System)365.4 568.14 Q
+(Storage)455.4 577.14 Q(Media)455.4 590.676 Q(FS Svr)432.936 545.676 Q 2.502
+(.I)-.495 G(nterface)467.451 545.676 Q(Cleartext)374.4 253.14 Q
+(\(internal - localhost\))374.4 266.676 Q(File System Inteface)374.4 239.604 Q
+(Encrypted)374.4 505.14 Q(\(local or remote\))374.4 518.676 Q F1(Figur)363.928
+627.78 Q 2.25(e2\255D)-.162 G(ata Flow in CFS Pr)412.141 627.78 Q(ototype)-.162
+E F2 1.964(measured the cost of creating an eight byte \214le one thousand)
+320.4 647.78 R 3.754(times. On)320.4 657.78 R 3.754(al)3.754 G 1.504
+(ocal system, both CFS and the user)373.161 657.78 R 1.503(-level system)-.18 F
+3.966(added about one third to total latency)320.4 667.78 R 8.466(.U)-.585 G
+3.966(nder NFS, CFS)494.808 667.78 R 2.39
+(increased latency by roughly a factor of two, while the user)320.4 677.78 R
+.262(encryption tool added only about 13%.)320.4 687.78 R .262
+(Figure 5 gives the results)4.762 F(of these measurements.)320.4 697.78 Q 5.562
+(These results suggest that encryption is expensive,)342.9 710.78 R .764
+(although the caching performed by CFS makes it less expensive)320.4 720.78 R
+EP
+%%Page: 8 8
+%%BeginPageSetup
+BP
+%%EndPageSetup
+.36 LW 255.609 72.25 104.391 72.25 DL/F0 9/Times-Roman@0 SF 43.893
+(File Elapsed)141.534 80 R -.315(Ti)2.25 G(me).315 E 45.112(System \(seconds\))
+135.284 90 R 255.609 93.25 104.391 93.25 DL 255.609 95.25 104.391 95.25 DL
+55.008(CLEAR-LOCAL 1)108.891 103 R(USER)108.891 113 Q -.162(TO)-.54 G 29.214
+(OL-LOCAL 217).162 F 63.999(CFS-LOCAL 22)108.891 123 R 255.609 126.25 104.391
+126.25 DL 63.999(CLEAR-NFS 20)108.891 134 R(USER)108.891 144 Q -.162(TO)-.54 G
+42.705(OL-NFS 234).162 F 77.49(CFS-NFS 74)108.891 154 R 255.609 157.25 104.391
+157.25 DL 194.931 72.25 194.931 157.25 DL 255.609 72.25 255.609 157.25 DL
+104.391 72.25 104.391 157.25 DL/F1 9/Times-Bold@0 SF(Figur)103.954 179 Q 2.25
+(e3\255L)-.162 G(arge File Copy + One Read)151.672 179 Q 255.609 207.25 104.391
+207.25 DL F0 43.893(File Elapsed)141.534 215 R -.315(Ti)2.25 G(me).315 E 45.112
+(System \(seconds\))135.284 225 R 255.609 228.25 104.391 228.25 DL 255.609
+230.25 104.391 230.25 DL 57.258(CLEAR-LOCAL 4)108.891 238 R(USER)108.891 248 Q
+-.162(TO)-.54 G 26.964(OL-LOCAL 5348).162 F 66.249(CFS-LOCAL 27)108.891 258 R
+255.609 261.25 104.391 261.25 DL 66.249(CLEAR-NFS 22)108.891 269 R(USER)108.891
+279 Q -.162(TO)-.54 G 40.455(OL-NFS 5371).162 F 79.74(CFS-NFS 77)108.891 289 R
+255.609 292.25 104.391 292.25 DL 194.931 207.25 194.931 292.25 DL 255.609
+207.25 255.609 292.25 DL 104.391 207.25 104.391 292.25 DL F1(Figur)105.705 314
+Q 2.25(e4\255L)-.162 G(arge File Copy + 50 Reads)153.423 314 Q 255.609 342.25
+104.391 342.25 DL F0 43.893(File Elapsed)141.534 350 R -.315(Ti)2.25 G(me).315
+E 45.112(System \(seconds\))135.284 360 R 255.609 363.25 104.391 363.25 DL
+255.609 365.25 104.391 365.25 DL 46.008(CLEAR-LOCAL 141)108.891 373 R(USER)
+108.891 383 Q -.162(TO)-.54 G 29.214(OL-LOCAL 201).162 F 59.499(CFS-LOCAL 203)
+108.891 393 R 255.609 396.25 104.391 396.25 DL 59.499(CLEAR-NFS 247)108.891 404
+R(USER)108.891 414 Q -.162(TO)-.54 G 42.705(OL-NFS 276).162 F 72.99
+(CFS-NFS 496)108.891 424 R 255.609 427.25 104.391 427.25 DL 194.931 342.25
+194.931 427.25 DL 255.609 342.25 255.609 427.25 DL 104.391 342.25 104.391
+427.25 DL F1(Figur)121.725 449 Q 2.25(e5\255S)-.162 G(mall File Cr)168.444 449
+Q(eation)-.162 E F0 .04(than user)61.2 469 R .04(-level encryption tools.)-.18
+F .039(CFS performance is much better)4.539 F .568
+(under practical workloads, however)61.2 479 R 5.069(.I)-.495 G .569
+(nformal benchmarks \(such)201.686 479 R 2.734
+(as compiling itself\), with underlying \214les on both local and)61.2 489 R
+.796(remotely mounted \214le systems, suggest a fairly consistent factor)61.2
+499 R 1.483(of approximately 1.3 using CFS compared with the underlying)61.2
+509 R 1.989(\214le system.)61.2 519 R 1.989
+(In day-to-day operation, where there is a mix of)6.489 F .126
+(CPU- and I/O- bound processing, the performance impact of CFS)61.2 529 R .836
+(is minimal.)61.2 539 R .836
+(For example, Figure 6 gives the results of compila-)5.336 F(tion)61.2 549 Q/F2
+9/Courier@0 SF(\(make\))2.589 E F0 .338
+(of the CFS system itself \(a mostly I/O-bound oper)2.589 F(-)-.18 E .513
+(ation\) under the various systems.)61.2 559 R .513
+(Note that under both local and)5.013 F 1.912
+(remote storage CFS adds about one third to the total latency;)61.2 569 R(user)
+61.2 579 Q .193(-level encryption adds about two thirds.)-.18 F .194
+(Furthermore, CFS is)4.694 F 2.767(operationally transparent, while user)61.2
+589 R 2.766(-level encryption requires)-.18 F 2.457
+(manual operation of the encryption software and is therefore)61.2 599 R
+(likely to introduce considerable user interface delay in practice.)61.2 609 Q
+F1 2.25(5. Conclusions)61.2 629 R F0 1.077
+(CFS provides a simple mechanism to protect data written)83.7 642 R .543
+(to disks and sent to networked \214le servers.)61.2 652 R .543
+(Although experience)5.043 F .487
+(with CFS and with user interaction is still limited to the research)61.2 662 R
+.45(environment, performance on modern workstations appears to be)61.2 672 R
+1.787(within a range that allows its routine use, despite the obvious)61.2 682
+R(shortcomings of a user)61.2 692 Q(-level NFS-server)-.18 E
+(-based implementation.)-.18 E .065
+(The client \214le system interface appears to be the right place)83.7 705 R
+.82(to protect \214le data.)61.2 715 R .82(Consider the alternatives.)5.32 F
+.82(Encrypting at the)5.32 F 4.065
+(application layer \(the traditional approach\) is inconvenient.)61.2 725 R
+514.809 72.25 363.591 72.25 DL 43.893(File Elapsed)400.734 80 R -.315(Ti)2.25 G
+(me).315 E 45.112(System \(seconds\))394.484 90 R 514.809 93.25 363.591 93.25
+DL 514.809 95.25 363.591 95.25 DL 50.508(CLEAR-LOCAL 63)368.091 103 R(USER)
+368.091 113 Q -.162(TO)-.54 G 29.547(OL-LOCAL 1).162 F(10)-.333 E 63.999
+(CFS-LOCAL 86)368.091 123 R 514.809 126.25 363.591 126.25 DL 63.999
+(CLEAR-NFS 75)368.091 134 R(USER)368.091 144 Q -.162(TO)-.54 G 42.705
+(OL-NFS 122).162 F 72.99(CFS-NFS 106)368.091 154 R 514.809 157.25 363.591
+157.25 DL 454.131 72.25 454.131 157.25 DL 514.809 72.25 514.809 157.25 DL
+363.591 72.25 363.591 157.25 DL F1(Figur)394.339 179 Q 2.25(e6\255C)-.162 G
+(ompilation)442.552 179 Q F0 2.355
+(Application based encryption leaves windows of vulnerability)320.4 199 R .013
+(while \214les are in the clear or requires the exclusive use of special-)320.4
+209 R 1.864(purpose "crypto-aware" applications on all encrypted \214les.)320.4
+219 R(At)6.364 E 1.288
+(the disk level, the granularity of encryption may not match the)320.4 229 R
+.48(users' security requirements, especially if dif)320.4 239 R .48
+(ferent \214les are to be)-.162 F 1.351(encrypted under dif)320.4 249 R 1.351
+(ferent keys.)-.162 F 1.351(Encrypting the network in dis-)5.851 F 1.985
+(tributed \214le systems, while useful in general against network-)320.4 259 R
+.44(based attack, does not protect the actual media and therefore still)320.4
+269 R(requires trust in the server not to disclose \214le data.)320.4 279 Q F1
+2.25(6. Acknowledgments)320.4 299 R F0 3.485
+(The author would like to express his thanks to Don)342.9 312 R 1.964
+(Mitchell and Jack Lacy for their help in using their excellent)320.4 322 R
+1.454(CryptoLib software.)320.4 332 R 1.453
+(Steve Bellovin made a number of helpful)5.954 F .671
+(suggestions on lines of attack against CFS.)320.4 342 R .671(Howard Katsef)
+5.171 F 2.921(fa)-.162 G(nd)549 342 Q -.63(To)320.4 352 S 3.473(mR).63 G 1.223
+(eingold entrusted CFS with real data and cheerfully suf-)346.247 352 R .224
+(fered through each new \(and incompatible\) release.)320.4 362 R -.63(To)4.724
+G 2.474(mL).63 G(ondon)535.5 362 Q .765
+(is owed a particular debt of gratitude for creating the supportive)320.4 372 R
+1.585(environment in which this work was done.)320.4 382 R 3.025 -.72(We a)
+6.085 H 1.585(lso thank the).72 F
+(anonymous referees for their helpful comments.)320.4 392 Q F1 2.25(7. Refer)
+320.4 412 R(ences)-.162 E F0 9.756([1] Howard,)320.4 425 R 1.322(J.H., Kazar)
+3.572 F 3.572(,M)-.36 G 1.322(.L., Menees, S.G., Nichols, D.A.,)432.978 425 R
+1.305(Satyanaryanan, M.)342.9 435 R 3.555(&S)5.805 G 1.305(idebotham, R.N.)
+433.305 435 R 1.305("Scale and Per)5.805 F(-)-.18 E .561
+(formance in Distributed File Systems.")342.9 445 R/F3 9/Times-Italic@0 SF .56
+(ACM T)5.06 F .56(rans. Com-)-.495 F(puting Systems,)342.9 455 Q F0 -1.161(Vo)
+2.25 G(l. 6, No. 1, \(February\), 1988.)1.161 E 9.756([2] Kleiman,)320.4 468 R
+.456(S.R., "Vnodes: An Architecture for Multiple File)2.706 F 2.109(System T)
+342.9 478 R 2.109(ypes in Sun UNIX.")-.63 F F3(Pr)6.608 E 2.108(oc. USENIX,)
+-.333 F F0(Summer)4.358 E(,)-.36 E(1986.)342.9 488 Q 9.756([3] Lacy)320.4 501 R
+4.178(,J)-.585 G 1.928(., Mitchell, D., and Schell, W)370.235 501 R 1.928
+(., "CryptoLib: A C)-.828 F 3.087(Library of Routines for Cryptosystems.")342.9
+511 R F3(Pr)7.587 E 3.087(oc. Fourth)-.333 F(USENIX Security W)342.9 521 Q
+(orkshop,)-.828 E F0(October)2.25 E 2.25(,1)-.36 G(993.)485.685 521 Q 9.756
+([4] Lai,)320.4 534 R 2.704(X. and Massey)4.954 F 4.954(,J)-.585 G 4.954(.")
+431.368 534 S 4.955(AP)442.244 534 S 2.705(roposal for a New Block)458.701 534
+R 1.988(Encryption Standard.")342.9 544 R F3(Pr)6.487 E 1.987(oc. EUROCR)-.333
+F 1.987(YPT 90,)-.162 F F0(389-404,)4.237 E(1990.)342.9 554 Q 9.756
+([5] National)320.4 567 R .132
+(Bureau of Standards, "Data Encryption Standard.")2.382 F
+(FIPS Publication #46, NTIS, Apr)342.9 577 Q 2.25(.1)-.495 G(977.)471.411 577 Q
+9.756([6] National)320.4 590 R 1.119
+(Bureau of Standards, "Data Encryption Standard)3.369 F 1.348
+(Modes of Operation.")342.9 600 R 1.349(FIPS Publication #81, NTIS, Dec.)5.849
+F(1980.)342.9 610 Q 9.756([7] Reiher)320.4 623 R 3.153(,P)-.36 G 3.153(.e)
+375.942 623 S .903(t. al., "Security Issues in the T)385.341 623 R(ruf)-.315 E
+.902(\215es File Sys-)-.162 F(tem.")342.9 633 Q F3(Pr)5.442 E .942(oc. PSRG W)
+-.333 F .943(orkshop on Network and Distributed)-.828 F(System Security)342.9
+643 Q(,)-.495 E F0(1993.)2.25 E 9.756([8] Sandber)320.4 656 R 2.271
+(g, R., Goldber)-.162 F 2.27(g, D., Kleiman, S., W)-.162 F 2.27(alsh, D., &)
+-.72 F -.495(Ly)342.9 666 S .336(on, B.).495 F .336
+("Design and Implementation of the Sun Network)4.836 F(File System.")342.9 676
+Q F3(Pr)4.5 E(oc. USENIX,)-.333 E F0(Summer)2.25 E 2.25(,1)-.36 G(985.)492.381
+676 Q EP
+%%Trailer
+end
+%%EOF
